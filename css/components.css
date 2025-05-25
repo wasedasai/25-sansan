@@ -1,0 +1,172 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* ここからヘッダー */
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-logo{
+    width: 100px;
+    margin: 20px 0 0 30px;
+}
+.hamburger-container{
+    display: flex;
+    align-items: center;
+}
+.hamburger-container p{
+    font-size: 20px;
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    position: relative;
+    z-index: 101;
+}
+.hamburger{
+    margin: 10px 45px 0 30px;
+    cursor:pointer;   
+    position:relative;
+    z-index:101;
+}
+.bar{
+    width: 55px;
+    height: 2px;
+    background-color: #000;
+    margin: 11px auto;
+    transition: all 0.3s ease-in-out;
+}
+.hamburger.active .bar:nth-child(1){
+    transform:translateY(5.5px) rotate(18deg);
+}
+.hamburger.active .bar:nth-child(2){
+    transform:translateY(-7.5px) rotate(-18deg);
+}
+.nav{
+    position:fixed;
+    top:0;
+    right:-100%;
+    width:42%;
+    height:100vh;
+    background:#d9d9d9;
+    clip-path:ellipse(90% 100% at 100% 50%);
+    transition:right .4s ease;
+    z-index:100;
+  }
+  .nav.active{ right:0; }
+  body.no-scroll{ overflow:hidden; }
+  .nav-inner{
+    width:min(380px,85%);
+    margin:0 auto;
+    margin-left: 35%;
+    padding:110px 0 60px;
+    display:flex;
+    flex-direction:column;
+    gap:50px;
+  }
+  .nav-heading{
+    font-family:"Zen Kaku Gothic New",sans-serif;
+    font-size:40px;font-weight:400;
+    margin-bottom:20px;
+  }
+  .nav-list{ list-style:none;padding-left:0; }
+  .nav-list li{ margin:12px 28px; }
+  .nav-list a{
+    font-family:"Noto Sans JP",sans-serif;
+    font-size:16px;line-height:1.4;
+    color:#000;text-decoration:none;
+    transition:opacity .25s;
+  }
+  .nav-list a:hover{ opacity:.6; }
+  .btn-cta{
+    display:inline-flex;align-items:center;gap:12px;
+    padding:18px 42px;
+    background:#fff;border-radius:9999px;
+    font-family:"Noto Sans JP",sans-serif;
+    font-size:14px;font-weight:500;color:#000;
+    text-decoration:none;transition:opacity .25s;
+  }
+  .btn-cta:hover{ opacity:.8; }
+  .arrow{ transform:translateX(2px); }
+  /* ───────── ① 600‒899px：タブレット縦 ───────── */
+@media (min-width:601px) and (max-width:899px){
+    .hamburger{ margin:10px 30px 0 30px; }
+    .bar{ width:48px;margin:10px auto; }
+    .nav{
+      width:70%;
+      /* clip-path:ellipse(130% 110% at 100% 50%); */
+    }
+    .nav-inner{
+      margin-left:35%;
+      gap:12vh;padding-top:150px;
+    }
+    .nav-heading{ font-size:34px; }
+    .nav-list li{ margin:12px 24px; }
+    .nav-list a{ font-size:15px; }
+    .btn-cta{ padding:16px 38px;font-size:13px; }
+  }
+  /* ───────── ② 900‒1199px：タブレット横 ───────── */
+  @media (min-width:900px) and (max-width:1199px){
+    .hamburger{ margin:10px 38px 0 38px; }
+    .bar{ width:52px;margin:11px auto; }
+    .nav{
+      width:55%;
+      /* clip-path:ellipse(110% 105% at 100% 50%); */
+    }
+    .nav-inner{
+      margin-left:32%;
+      gap:8vh;padding-top:180px;
+    }
+    .nav-heading{ font-size:38px; }
+    .nav-list li{ margin:12px 26px; }
+    .nav-list a{ font-size:16px; }
+  
+    .btn-cta{ padding:18px 40px;font-size:14px; }
+  }
+  @media (max-width:600px){
+    .header-logo{
+        width: 80px;
+        margin: 10px 0 0 20px;
+    }
+    .hamburger-container p{
+        font-size: 20px;
+        margin-left: 10px;
+    }
+    .hamburger{
+        margin: 10px 25px 0 25px;
+    }
+    .bar{
+        width: 40px;
+        margin: 8px auto;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform:translateY(4px) rotate(18deg);
+    }
+    .hamburger.active .bar:nth-child(2){
+        transform:translateY(-6px) rotate(-18deg);
+    }
+    .nav{
+      width:95%;
+      clip-path:ellipse(100% 100% at 100% 50%);
+    }
+    .nav-inner{ 
+        gap:35px;
+        padding-top: 100px;
+        margin-left: 25%;
+     }
+     .nav-heading{
+        font-size: 30px;
+        margin-bottom: 10px;
+     }
+    .nav-list li{
+        margin: 10px 20px;
+    }
+     .nav-list a{
+        font-size: 14px;
+     }
+    .btn-cta{
+        padding: 15px 30px;
+        font-size: 12px;
+    }
+  }
+/* ここまでヘッダー */
