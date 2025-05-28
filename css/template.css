@@ -1,3 +1,4 @@
+/* ここからヒーロー */
 .title h3{
     font-size: 20px;
     margin: 200px 130px 100px 130px;
@@ -17,6 +18,7 @@
     margin-right: 0;
     display: block;
     margin-top: 120px;
+    margin-bottom: 120px;
 }
 .template-decoration{
     width: 50%;
@@ -28,3 +30,47 @@
     background-color: #d9d9d9;
     top: 51%;
 }
+  @media (min-width: 1200px){
+    .title h2{
+      font-size: 96px;
+    }
+  }
+  /* ===== Tablet (768〜1199px) ===== */
+  @media (min-width: 768px) and (max-width: 1316px){
+    .title h2{
+      font-size: clamp(48px, 6vw, 72px);
+    }
+  }
+  /* ===== Smartphone (〜767px) ===== */
+  @media (max-width: 767px){
+    .title{
+      padding-left: 7vw;
+    }
+    .title h3{
+      font-size: 13px;
+      margin: 150px 0 0;
+    }
+    .title h2{
+      font-size: 28px;
+      line-height: 1.25;
+      margin: 100px 0 0;
+    }
+    .template-decoration{
+      width: 70%;
+      height: 42%;
+      top: 43%;
+      left: 0;
+    }
+    .title img{
+      width: 95%;
+      margin-top: 85px;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 1316px) and (orientation: portrait) {
+    .template-decoration{
+      height: 62vw;
+      max-height: 80%;
+      top: 33%;
+    }
+  }
+/* ここまでヒーロー */
