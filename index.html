@@ -24,6 +24,423 @@
         <meta name="google-site-verification" content="PREUoAvDPGm4IBv_BUsNCwKUSFRjLSaLSSNL8bfFCAE" />
    </head>
 <body>
+    <!-- ここからヘッダー -->
+     <header>
+        <div class="header-container">
+            <a href="../index.html"><img src="../img/header-logo.png" alt="ロゴ" class="header-logo"></a>
+            <div class="hamburger-container">
+                <p>menu</p>
+                <div class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </div>
+        <nav id="global-nav" class="nav" aria-hidden="true">
+            <div class="nav-inner">
+              <!-- ── Kikaku ───────────────────── -->
+              <section class="nav-block">
+                <h2 class="nav-heading">Events</h2>
+                <ul class="nav-list">
+                  <li><a href="#kikaku-group">ー参加団体・参加者企画</a></li>
+                  <li><a href="#kikaku-staff">ー運営スタッフ企画</a></li>
+                </ul>
+              </section>
+              <!-- ── Apply ────────────────────── -->
+              <section class="nav-block">
+                <h2 class="nav-heading">Apply</h2>
+                <ul class="nav-list">
+                  <li><a href="#flow">ー募集の流れ</a></li>
+                  <li><a href="#guide">ー参加の手引き</a></li>
+                </ul>
+              </section>
+              <!-- ── Other ────────────────────── -->
+              <section class="nav-block">
+                <h2 class="nav-heading">Other</h2>
+                <ul class="nav-list">
+                  <li><a href="#faq">ーよくある質問・お問い合わせ</a></li>
+                  <li><a href="#design-system">ーロゴ・デザインシステム</a></li>
+                </ul>
+              </section>
+              <!-- ── CTA ボタン ───────────────── -->
+              <div class="nav-cta">
+                <a href="https://forms.gle/xxxxxxxx" class="btn-cta">
+                  プレエントリーフォーム
+                  <span class="arrow">▶</span>
+                </a>
+              </div>
+            </div>
+          </nav>
+        <script>
+            const burger   = document.querySelector('.hamburger');
+            const nav      = document.getElementById('global-nav');
+            const body     = document.body;
+            burger.addEventListener('click', () => {
+              burger.classList.toggle('active');
+              nav.classList.toggle('active');
+              body.classList.toggle('no-scroll');
+            });
+        </script>
+     </header>
+    <!-- ここまでヘッダー -->
+    <section class="entrance">
+        <div class="entrance_sentence">
+            <h1 class="entrance_title">早稲田祭2025<br>参加団体・参加者募集</h1>
+            <p class="entrance_subtitle">つながり。<br>人生が変わるつながりに出逢おう。<br>そして、日本一の学園祭をともに創ろう。</p>
+            <p class="entrance_subtitle">Connections.<br>Meet connections that will change your life.<br>Let's create the best school festival in Japan together.</p>
+        </div>
+        <div class="entrance_image">
+            <img src="img/top_image_demo.png" class="top_main_image" alt="">
+
+        </div>
+    </section>
+
+    <section class="news">
+        <div class="news_contents">
+            <div class="title-block">(news)</div>
+            <div class="news_box">
+                <div class="news-flexbox">
+                    <div class="news_date">01</div>
+                    <div class="news_sentence">早稲田祭2024 参加団体・参加者募集及び出演団体・出演者募集 情報解禁！</div>
+                </div>
+                <div class="news-flexbox">
+                    <div class="news_date">02</div>
+                    <div class="news_sentence">プレエントリーフォーム受付開始！</div>
+                </div>
+            </div>            
+        </div>
+        <div class="news_circle"></div>
+    </section>
+
+    <section class="steps">
+        <div class="steps_contents">
+            <div class="title-block">(steps)</div>
+            <div class="steps_sentence">本サイトでは、早稲田祭2025参加団体・参加者募集に関する情報を掲載しております。<br>参加団体・参加者企画への参加を希望される方は、「募集の流れ」および「参加の手引き」をご確認のうえ、プレエントリーフォームの提出をお願いいたします。<br>※参加団体・参加者企画への参加申し込みにはプレエントリーが必須となっております。</div>
+        </div>
+        <div class="steps_circle"></div>
+    </section>
+
+    <section class="events">
+        <div class="events_contents1">
+            <div class="event_box">
+                <div class="events-category">
+                    <div class="events-step">step</div>
+                    <div class="events-number">01</div>
+                </div>
+                <div class="events_title">参加の流れ</div>
+                <div class="event_allow"><a href="#" class="triangle-right"></a></div>
+            </div>
+        </div>
+        <div class="events_contents2">
+            <div class="event_box">
+                <div class="events-category">
+                    <div class="events-step">step</div>
+                    <div class="events-number">02</div>
+                </div>
+                <div class="events_title">参加の手引き</div>
+                <div class="event_allow"><a href="#" class="triangle-right"></a></div>
+            </div>
+        </div>
+        <div class="events_contents3">
+            <div class="event_box">
+                <div class="events-category">
+                    <div class="events-step">step</div>
+                    <div class="events-number">03</div>
+                </div>
+                <div class="events_title">プリエントリフォーム</div>
+                <div class="event_allow"><a href="#" class="triangle-right"></a></div>
+            </div>
+        </div>
+    </section>
+        <section class="steps faqver">
+        <div class="steps_contents">
+            <div class="title-block">(events)</div>
+            <div class="steps_sentence">企画は、参加団体・参加者企画と運営スタッフ企画の2つに大きく分かれています。<br>
+早稲田祭2025では、参加団体・参加者企画が8企画、運営スタッフ企画が10企画予定されています。<br>
+企画ごとに募集形態や注意事項が異なりますので、よく読んだうえでの申し込みをお願い致します。</div>
+        </div>
+        <div class="steps_circle white-color"></div>
+        <div class="step_circle_back"></div>
+    </section>
+    <section class="faq">
+        <div class="faq-left">
+            <div class="faq-left-sentence">
+                参加団体・参加者企画
+            </div>
+            
+        </div>
+        <div class="faq-right">
+            <div class="events-button events-button1">
+                <a href="#kikaku-group" class="events-button-text">大隈講堂前ステージ企画</a>
+                    <div class="event_allow">
+                        <a href="#" class="triangle-right triangle-event"></a>
+                    </div>
+            </div>
+
+            <div class="events-button events-button1">
+                <a href="#kikaku-group" class="events-button-text">大隈講堂前ステージ企画</a>
+                    <div class="event_allow">
+                        <a href="#" class="triangle-right triangle-event"></a>
+                    </div>
+            </div>
+
+            <div class="events-button events-button1">
+                <a href="#kikaku-group" class="events-button-text">大隈講堂前ステージ企画</a>
+                    <div class="event_allow">
+                        <a href="#" class="triangle-right triangle-event"></a>
+                    </div>
+            </div>
+
+            <div class="events-button events-button1">
+                <a href="#kikaku-group" class="events-button-text">大隈講堂前ステージ企画</a>
+                    <div class="event_allow">
+                        <a href="#" class="triangle-right triangle-event"></a>
+                    </div>
+            </div>
+
+            <div class="events-button events-button1">
+                <a href="#kikaku-group" class="events-button-text">大隈講堂前ステージ企画</a>
+                    <div class="event_allow">
+                        <a href="#" class="triangle-right triangle-event"></a>
+                    </div>
+            </div>
+
+            <div class="events-button events-button1">
+                <a href="#kikaku-group" class="events-button-text">大隈講堂前ステージ企画</a>
+                    <div class="event_allow">
+                        <a href="#" class="triangle-right triangle-event"></a>
+                    </div>
+            </div>
+            
+            <div class="events-button events-button1">
+                <a href="#kikaku-group" class="events-button-text">大隈講堂前ステージ企画</a>
+                    <div class="event_allow">
+                        <a href="#" class="triangle-right triangle-event"></a>
+                    </div>
+            </div>
+
+            <div class="events-button events-button1">
+                <a href="#kikaku-group" class="events-button-text">大隈講堂前ステージ企画</a>
+                    <div class="event_allow">
+                        <a href="#" class="triangle-right triangle-event"></a>
+                    </div>
+            </div>
+
+        </div>
+    </section>
+    <div class="blank"></div>
+        <section class="faq2">
+        <div class="faq-left2">
+            <div class="faq-left-sentence2">
+            </div>
+            <div class="faq-left-button2">
+                <img src="img/yajirushi-hukuzatsu.png" alt="" class="faq-left-button2-yajirushi">
+                <div class="faq-left-button2-text">詳しくみる</div>
+            </div>
+        </div>
+        <div class="faq-right2">
+                        <div class="events-button events-button1">
+                <a href="#kikaku-group" class="events-button-text">大隈講堂前ステージ企画</a>
+                    <div class="event_allow">
+                        <a href="#" class="triangle-right triangle-event"></a>
+                    </div>
+            </div>
+
+            <div class="events-button events-button1">
+                <a href="#kikaku-group" class="events-button-text">大隈講堂前ステージ企画</a>
+                    <div class="event_allow">
+                        <a href="#" class="triangle-right triangle-event"></a>
+                    </div>
+            </div>
+
+            <div class="events-button events-button1">
+                <a href="#kikaku-group" class="events-button-text">大隈講堂前ステージ企画</a>
+                    <div class="event_allow">
+                        <a href="#" class="triangle-right triangle-event"></a>
+                    </div>
+            </div>
+
+            <div class="events-button events-button1">
+                <a href="#kikaku-group" class="events-button-text">大隈講堂前ステージ企画</a>
+                    <div class="event_allow">
+                        <a href="#" class="triangle-right triangle-event"></a>
+                    </div>
+            </div>
+
+            <div class="events-button events-button1">
+                <a href="#kikaku-group" class="events-button-text">大隈講堂前ステージ企画</a>
+                    <div class="event_allow">
+                        <a href="#" class="triangle-right triangle-event"></a>
+                    </div>
+            </div>
+
+            <div class="events-button events-button1">
+                <a href="#kikaku-group" class="events-button-text">大隈講堂前ステージ企画</a>
+                    <div class="event_allow">
+                        <a href="#" class="triangle-right triangle-event"></a>
+                    </div>
+            </div>
+            
+            <div class="events-button events-button1">
+                <a href="#kikaku-group" class="events-button-text">大隈講堂前ステージ企画</a>
+                    <div class="event_allow">
+                        <a href="#" class="triangle-right triangle-event"></a>
+                    </div>
+            </div>
+
+            <div class="events-button events-button1">
+                <a href="#kikaku-group" class="events-button-text">大隈講堂前ステージ企画</a>
+                    <div class="event_allow">
+                        <a href="#" class="triangle-right triangle-event"></a>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <!-- ここからよくある質問 -->
+    <section class="steps frequency-ver">
+        <div class="steps_contents">
+            <div class="title-block">(steps)</div>
+            <div class="steps_sentence">よくある質問の中から抜粋しました。<br>
+詳しくは、よくある質問・お問い合わせページをご覧ください。<br>
+お問い合わせ先のメールアドレスもこちらのページに記載されています。</div>
+        </div>
+        <div class="steps_circle white"></div>
+    </section>
+    <section class="frequency">
+        <div class="frequency-question">
+            <div class="frequency-question-question">
+                <div class="frequency-question-left">Q</div>
+                <div class="frequency-question-right"> 早稲田祭2025にはパフォーマンスから展示、飲食屋台までさまざまな企画があるため、<br>ぴったりの企画が見つかります。詳しくは企画紹介のページをご覧ください。</div>
+            </div>
+            <div class="frequency-question-answer">
+                <div class="frequency-question-left">A</div>
+                <div class="frequency-question-right">まずは、プレエントリーフォームの提出をお願いします。<br>
+                フォームを提出していただければ、その後の流れは運営スタッフがサポートいたします。
+                </div>
+            </div>
+        </div>
+
+        <div class="frequency-question">
+            <div class="frequency-question-question">
+                <div class="frequency-question-left">Q</div>
+                <div class="frequency-question-right">自分が参加できる企画があるか不安です。</div>
+            </div>
+            <div class="frequency-question-answer">
+                <div class="frequency-question-left">A</div>
+                <div class="frequency-question-right">早稲田祭2025にはパフォーマンスから展示、飲食屋台までさまざまな企画があるため、ぴったりの企画が見つかります。詳しくは企画紹介のページをご覧ください。
+                </div>
+            </div>
+        </div>
+
+        <div class="frequency-question">
+            <div class="frequency-question-question">
+                <div class="frequency-question-left">Q</div>
+                <div class="frequency-question-right">複数企画への応募はできますか。</div>
+            </div>
+            <div class="frequency-question-answer">
+                <div class="frequency-question-left">A</div>
+                <div class="frequency-question-right">可能です。1団体様につき2企画まで応募していただけます。<br>
+（ただし、芸術展企画の参加は企画数の上限に含まれません。）。
+                </div>
+            </div>
+        </div>
+
+        <div class="frequency-question">
+            <div class="frequency-question-question">
+                <div class="frequency-question-left">Q</div>
+                <div class="frequency-question-right">企画決定後辞退したいのですが、キャンセル料などはありますか。</div>
+            </div>
+            <div class="frequency-question-answer">
+                <div class="frequency-question-left">A</div>
+                <div class="frequency-question-right"> 8月6日(木) のキャンセル期限までは、キャンセル料の発生はありません。
+                    ただし、キャンセル期限をすぎますと、企画参加有無に関わらず参加団体・参加者企画分担金をお支払いしていただくことになります。ご注意ください。
+                </div>
+            </div>
+        </div>
+        <div class="frecuency-button-box">
+                  <div class="frecuency-button">
+            <img src="img/naga-iyajirushi.png" alt="" class="nagayajirushi">
+            <div class="frecuency-button-text">詳しくみる</div>
+        </div>  
+        </div>
+
+    </section>
+<!-- ここまでよくある質問 -->
+    <!-- ここからフッター -->
+    <footer>
+      <div class="sircle-right">
+
+      </div>
+      <div class="footer-content-box">
+          <div class="home-box footer-content-content">
+              <h1>Home</h1>
+              <h2><a href="https://wasedasai.github.io/2025-OfficialWelcomeWebsite/">ートップ</a><br>
+                  <a href="https://wasedasai.github.io/2025-OfficialWelcomeWebsite/">ー代表挨拶</a></h2>
+          </div>
+          <div class="kikaku-box footer-content-content">
+              <h1>Events</h1>
+              <h2><a href="https://wasedasai.github.io/2025-OfficialWelcomeWebsite/">ー参加団体・参加者企画</a><br>
+                  <a href="https://wasedasai.github.io/2025-OfficialWelcomeWebsite/">ー運営スタッフ企画</a></h2>
+          </div>
+          <div class="apply-box footer-content-content">
+              <h1>Apply</h1>
+              <h2><a href="https://wasedasai.github.io/2025-OfficialWelcomeWebsite/">ー募集の流れ</a><br>
+                  <a href="https://wasedasai.github.io/2025-OfficialWelcomeWebsite/">ー参加の手引き</a></h2>
+          </div>
+          <div class="other-box footer-content-content">
+              <h1>Other</h1>
+              <h2><a href="https://wasedasai.github.io/2025-OfficialWelcomeWebsite/">ーよくある質問・お問い合わせ</a><br>
+                  <a href="https://wasedasai.github.io/2025-OfficialWelcomeWebsite/">ーロゴ・デザインシステム</a></h2>
+          </div>
+      </div>
+      <div class="sircle-left">
+      </div>
+      <div class="copyright-unsta">
+          早稲田祭2025<br>
+          公式参加団体・参加者募集サイト<br>
+      </div>
+      <div class="unsta-sns">
+          <div class="pc">公式SNS</div>
+          <a href="https://twitter.com/wasedasai" target="_blank"><img src="../img/Instagram_Glyph_Black 1.png" alt="Instagram" class="sns-icon-footer"></a>
+          <a href="https://www.youtube.com/@wasedasai_official" target="_blank"><img src="../img/logo-black 1.png" alt="X" class="sns-icon-footer"></a>
+      </div>
+  </footer>
+  <!-- ここまでフッター -->
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+
+  /* --- 必要な要素をとる --- */
+  const fixedTitle = document.querySelector('.faq-left-sentence'); // 左カラムの固定見出し
+  const blank      = document.querySelector('.blank');            // 赤い帯
+  if (!fixedTitle || !blank) return;                              // 念のため
+
+  /* --- 書き換え前後の文字列 --- */
+  const ORIGINAL = '参加団体・参加者企画';
+  const SWAP     = '運営スタッフ企画';
+
+  /* --- スクロール位置で切り替え --- */
+  function toggleTitle() {
+    const bottom = blank.getBoundingClientRect().bottom;
+
+    /* blank が画面の上端より上かどうか */
+    if (bottom <= 250) {
+      /* 通過後 → 置き換え */
+      fixedTitle.textContent = SWAP;
+    } else {
+      /* 上端より下に残っている → 元に戻す */
+      fixedTitle.textContent = ORIGINAL;
+    }
+  }
+
+  /* ページ読み込み直後 & スクロール時に実行 */
+  toggleTitle();
+  window.addEventListener('scroll', toggleTitle, { passive:true });
+  window.addEventListener('resize', toggleTitle);   // 画面回転などにも対応
+
+});
+</script>
+
 
 </body>
 </html>
