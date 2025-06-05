@@ -491,6 +491,38 @@ const observer = new IntersectionObserver(callback, options);
 
 targets.forEach(el => observer.observe(el));
 
+document.addEventListener('DOMContentLoaded', () => {
+  const steps   = document.querySelector('.steps');        // セクション
+  const circle  = document.querySelector('.steps_circle'); // 円 … 参照だけなら不要
+
+  if (!steps || !circle) return;
+
+  /* スクロールごとに呼ばれる関数 */
+  function updateShift() {
+    const rect = steps.getBoundingClientRect();   // ビューポートとの相対位置
+    const vh   = window.innerHeight;
+
+    /* 
+       進捗 = セクションが画面に入り始めたら 0 → 
+              セクションの上端が画面上端に着いたら 1
+       clamp で 0〜1 に丸める
+    */
+   const k= 3.0;
+    let progress = (vh - rect.top) / (rect.height + vh);
+    progress = Math.max(0, Math.min(1, progress)); 
+
+    /* カスタムプロパティに書き込む（→ CSS 側が即座に参照）*/
+    steps.style.setProperty('--shift', progress);
+  }
+
+  /* 初回 + スクロール + リサイズで実行 */
+  updateShift();
+  window.addEventListener('scroll',  updateShift, { passive:true });
+  window.addEventListener('resize',  updateShift);
+});
+
+
+
 </script>
 
 

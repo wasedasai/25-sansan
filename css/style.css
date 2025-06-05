@@ -185,6 +185,28 @@ z-index: 2;
 .white-color {
     color: #ffffff;
 }
+
+/* steps セクションだけに適用するカスタムプロパティ */
+.steps {
+  --shift: 0;           /* 0 = 初期位置, 1 = 最大上移動 */
+  margin-bottom: 1px;
+}
+
+/* 円そのもの */
+.steps_circle {
+  width: 545px;
+  height: 545px;
+  border-radius: 50%;
+  position: absolute;
+  left: -100px;
+  margin-top: 800px;         /* ←既存値はそのまま */
+  /* ↓ ここを transform で可変にする */
+  transform: translateY(calc(-1300px * var(--shift))); 
+  /* -200px は「どのくらい上げたいか」の距離。お好みで調整 */
+  transition: transform 0.1s linear;  /* ガタつき防止の微小トランジション */
+}   
+
+
 /* ここまでsteps */
 
 /* ここからevents */
