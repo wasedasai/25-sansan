@@ -80,6 +80,26 @@
               nav.classList.toggle('active');
               body.classList.toggle('no-scroll');
             });
+
+            // 対象をまとめて取得
+const targets = document.querySelectorAll('.reveal');
+
+// 交差判定時のコールバック
+const callback = (entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('in-view'); // アニメ開始
+      observer.unobserve(entry.target);      // 1度だけなら監視解除
+    }
+  });
+};
+
+// 閾値 15% で監視開始
+const options = { threshold: 0.15 };
+const observer = new IntersectionObserver(callback, options);
+
+targets.forEach(el => observer.observe(el));
+
         </script>
      </header>
     <!-- ここまでヘッダー -->
@@ -310,7 +330,7 @@
         <div class="frequency-question">
             <div class="frequency-question-question">
                 <div class="frequency-question-left">Q</div>
-                <div class="frequency-question-right"> 早稲田祭2025にはパフォーマンスから展示、飲食屋台までさまざまな企画があるため、<br>ぴったりの企画が見つかります。詳しくは企画紹介のページをご覧ください。</div>
+                <div class="frequency-question-right">早稲田祭2025にはパフォーマンスから展示、飲食屋台までさまざまな企画があるため、<br>ぴったりの企画が見つかります。詳しくは企画紹介のページをご覧ください。</div>
             </div>
             <div class="frequency-question-answer">
                 <div class="frequency-question-left">A</div>
@@ -352,7 +372,7 @@
             </div>
             <div class="frequency-question-answer">
                 <div class="frequency-question-left">A</div>
-                <div class="frequency-question-right"> 8月6日(木) のキャンセル期限までは、キャンセル料の発生はありません。
+                <div class="frequency-question-right">8月6日(木) のキャンセル期限までは、キャンセル料の発生はありません。
                     ただし、キャンセル期限をすぎますと、企画参加有無に関わらず参加団体・参加者企画分担金をお支払いしていただくことになります。ご注意ください。
                 </div>
             </div>

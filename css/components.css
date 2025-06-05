@@ -5,6 +5,7 @@
     overflow-x: hidden;
     font-family: "Zen Kaku Gothic New", sans-serif;
 }
+
 /* ここからヘッダー */
 header{
     position: fixed;
@@ -306,11 +307,17 @@ color:#fff;                       /* 変えたい色に */
 }
 @media (max-width: 767px) {
 footer { 
-  min-height:170svh; 
+  min-height:110svh; 
   background: linear-gradient(to bottom,
             #ffffff 0 50%,
             #02B9D4 50% 100%);
-} 
+}
+.footer-content-content > h1 {
+  font-size: 30px;
+}
+.footer-content-content > h2 {
+  font-size: 14px;
+}
   .sircle-right {
       margin-left: -25vw;
   }    
@@ -325,7 +332,7 @@ footer {
 
   .footer-content-box {
       bottom: 10%;
-      height: 50%;
+      height: 75% !important;
       width: 300px;
   }
   .footer-content-box{
@@ -351,6 +358,10 @@ footer {
 }
 .copyright-unsta {
   display: none;
+}
+.sns-icon-footer {
+  width: 32px;
+  height: 32px;
 }
 .pc {
   display: none;
