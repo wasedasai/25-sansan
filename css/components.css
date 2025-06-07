@@ -20,7 +20,7 @@ header{
 }
 .header-logo{
     width: 100px;
-    margin: 20px 0 0 30px;
+    margin: 20px 0 0 20px;
 }
 .hamburger-container{
     display: flex;
@@ -31,6 +31,7 @@ header{
     font-family: "Zen Kaku Gothic New", sans-serif;
     position: relative;
     z-index: 101;
+    transition:color .6s ease;   
 }
 .hamburger{
     margin: 10px 45px 0 30px;
@@ -41,9 +42,9 @@ header{
 .bar{
     width: 55px;
     height: 2px;
-    background-color: #000;
+    background-color: #222222;
     margin: 11px auto;
-    transition: all 0.3s ease-in-out;
+    transition:background-color .8s ease;
 }
 .hamburger.active .bar:nth-child(1){
     transform:translateY(5.5px) rotate(18deg);
@@ -57,10 +58,12 @@ header{
     right:-100%;
     width:42%;
     height:100vh;
-    background:#d9d9d9;
+    background:#D54640;
     clip-path:ellipse(90% 100% at 100% 50%);
     transition:right .4s ease;
     z-index:100;
+    overflow: hidden;     /* 両軸とも遮断 */
+    overscroll-behavior: none;
   }
   .nav.active{ right:0; }
   body.no-scroll{ overflow:hidden; }
@@ -71,32 +74,36 @@ header{
     padding:110px 0 60px;
     display:flex;
     flex-direction:column;
-    gap:50px;
+    gap:45px;
   }
   .nav-heading{
     font-family:"Zen Kaku Gothic New",sans-serif;
     font-size:40px;font-weight:400;
-    margin-bottom:20px;
+    margin-bottom:20px;color: #fbfbfb
   }
   .nav-list{ list-style:none;padding-left:0; }
-  .nav-list li{ margin:12px 28px; }
+  .nav-list li{ margin:12px 0px; }
   .nav-list a{
-    font-family:"Noto Sans JP",sans-serif;
+    font-family:"Zen Kaku Gothic New",sans-serif;
     font-size:16px;line-height:1.4;
-    color:#000;text-decoration:none;
+    color:#fbfbfb;text-decoration:none;
     transition:opacity .25s;
   }
   .nav-list a:hover{ opacity:.6; }
   .btn-cta{
     display:inline-flex;align-items:center;gap:12px;
     padding:18px 42px;
-    background:#fff;border-radius:9999px;
-    font-family:"Noto Sans JP",sans-serif;
-    font-size:14px;font-weight:500;color:#000;
+    background:transparent;border-radius:9999px;
+    border:1.5px solid #fbfbfb;
+    font-family:"Zen Kaku Gothic New",sans-serif;
+    font-size:14px;font-weight:500;color:#fbfbfb;
     text-decoration:none;transition:opacity .25s;
   }
   .btn-cta:hover{ opacity:.8; }
   .arrow{ transform:translateX(2px); }
+  body.no-scroll .hamburger .bar        { background-color:#fbfbfb; }
+  body.no-scroll .hamburger-container p { color:#fbfbfb; }
+
   /* ───────── ① 600‒899px：タブレット縦 ───────── */
 @media (min-width:601px) and (max-width:899px){
     .hamburger{ margin:10px 30px 0 30px; }
@@ -110,7 +117,7 @@ header{
       gap:12vh;padding-top:150px;
     }
     .nav-heading{ font-size:34px; }
-    .nav-list li{ margin:12px 24px; }
+    .nav-list li{ margin:12px 0px; }
     .nav-list a{ font-size:15px; }
     .btn-cta{ padding:16px 38px;font-size:13px; }
   }
@@ -127,7 +134,7 @@ header{
       gap:8vh;padding-top:180px;
     }
     .nav-heading{ font-size:38px; }
-    .nav-list li{ margin:12px 26px; }
+    .nav-list li{ margin:12px 0px; }
     .nav-list a{ font-size:16px; }
   
     .btn-cta{ padding:18px 40px;font-size:14px; }
@@ -135,7 +142,7 @@ header{
   @media (max-width:600px){
     .header-logo{
         width: 80px;
-        margin: 10px 0 0 20px;
+        margin: 10px 0 0 10px;
     }
     .hamburger-container p{
         font-size: 20px;
@@ -168,7 +175,7 @@ header{
         margin-bottom: 10px;
      }
     .nav-list li{
-        margin: 10px 20px;
+        margin: 10px 0px;
     }
      .nav-list a{
         font-size: 14px;
@@ -179,6 +186,75 @@ header{
     }
   }
 /* ここまでヘッダー */
+
+/* ここからブロックタイトル */
+.blockTitleContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 70px;
+}
+
+.blockTitleBar {
+  width: 9px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.blockRed {
+  background-color: #D54640;
+}
+
+.blockBlue {
+  background-color: #6274BE;
+}
+
+.blockYellow {
+  background-color: #f8b945;
+}
+
+.blockTitle {
+  font-size: 30px;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #222222;
+  margin-bottom: 5px;
+}
+
+.blockTitle-small{
+  font-size: 24px;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #222222;
+  margin-bottom: 5px;
+}
+
+.blockTitleBar-small{
+  width: 7px;
+  height: 26px;
+  border-radius: 3px;
+  gap: 5px;
+}
+
+@media (max-width: 500px) {
+  .blockTitleContainer {
+    gap: 5px;
+  }
+
+  .blockTitleBar {
+    width: 6px;
+    height: 20px;
+    border-radius: 3px;
+  }
+
+  .blockTitle {
+    font-size: 20px;
+    margin-bottom: 1px;
+  }
+}
+/* ここまでブロックタイトル */
 
 
 /* ここからフッター */
@@ -192,11 +268,12 @@ footer {
   width: 100vw;
   position: relative;
   overflow: hidden;
+  margin-top: 150px;
 }
 .sircle-right {
   width: 1882px;
   height: 1281px;
-  background-color: #02B9D4;
+  background-color: #6274BE;
   border-radius: 50%;
   margin-top: 0vh;
   margin-left: 29vw;
@@ -207,13 +284,12 @@ footer {
 .sircle-left {
   width: 1882px;
   height: 1281px;
-  background-color: #ff3436;
+  background-color: #D54640;
   border-radius: 50%;
   margin-left: -300px;
   margin-top: 200px;
   position: absolute;
   z-index: 2;
-  opacity: 0.8;
 }
 .footer-content-box {
   width: 52%;
@@ -239,21 +315,22 @@ gap:0;                               /* マージン要らなければ 0 */
 .footer-content-content h1 {
   font-size: 250%;
   font-weight: normal;
+  color: #fbfbfb;
 }
 .footer-content-content h2 {
   font-size: 125%;
   font-weight: normal;
   margin-top: 10px;
-  margin-left: 30px;
+  margin-left: 0px;
 }
 /* ── 追加 ─────────────────────────── */
 .footer-content-content a{          /* 通常状態 */
-color:#000;                       /* 任意の初期色 */
+color:#fbfbfb;                       /* 任意の初期色 */
 text-decoration:none;
 transition:color .3s;             /* なめらかに変化 */
 }
 .footer-content-content a:hover{    /* ホバー時 */
-color:#fff;                       /* 変えたい色に */
+color:#fbfbfb;                       /* 変えたい色に */
 }
 /* ─────────────────────────────── */
 
@@ -271,6 +348,7 @@ color:#fff;                       /* 変えたい色に */
   bottom: 30%;
   left: 2.5vw;
   font-size: 20px;
+  color: #fbfbfb;
 }
 .unsta-sns {
   position: absolute;
@@ -283,6 +361,7 @@ color:#fff;                       /* 変えたい色に */
   bottom: 10%;
   opacity: 1;
   z-index: 4;
+  color: #fbfbfb;
 }
 .sns-icon-footer {
   width: 36px;
@@ -308,8 +387,9 @@ color:#fff;                       /* 変えたい色に */
 footer { 
   min-height:170svh; 
   background: linear-gradient(to bottom,
-            #ffffff 0 50%,
-            #02B9D4 50% 100%);
+            #fbfbfb 0 50%,
+            #6274BE 50% 100%);
+  margin-top: 50px;
 } 
   .sircle-right {
       margin-left: -25vw;
@@ -318,8 +398,8 @@ footer {
       margin-top: 50px;
       margin-left: -1000px;
       background: linear-gradient(to bottom,
-            #ff6B6C 0 50%,
-            #02B9D4 50% 100%);
+            #D54640 0 50%,
+            #6274BE 50% 100%);
       opacity: 1;
   }
 
