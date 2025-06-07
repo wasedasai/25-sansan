@@ -187,6 +187,75 @@ header{
   }
 /* ここまでヘッダー */
 
+/* ここからブロックタイトル */
+.blockTitleContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 70px;
+}
+
+.blockTitleBar {
+  width: 9px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.blockRed {
+  background-color: #D54640;
+}
+
+.blockBlue {
+  background-color: #6274BE;
+}
+
+.blockYellow {
+  background-color: #f8b945;
+}
+
+.blockTitle {
+  font-size: 30px;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #222222;
+  margin-bottom: 5px;
+}
+
+.blockTitle-small{
+  font-size: 24px;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #222222;
+  margin-bottom: 5px;
+}
+
+.blockTitleBar-small{
+  width: 7px;
+  height: 26px;
+  border-radius: 3px;
+  gap: 5px;
+}
+
+@media (max-width: 500px) {
+  .blockTitleContainer {
+    gap: 5px;
+  }
+
+  .blockTitleBar {
+    width: 6px;
+    height: 20px;
+    border-radius: 3px;
+  }
+
+  .blockTitle {
+    font-size: 20px;
+    margin-bottom: 1px;
+  }
+}
+/* ここまでブロックタイトル */
+
 
 /* ここからフッター */
 .blank {
@@ -199,6 +268,7 @@ footer {
   width: 100vw;
   position: relative;
   overflow: hidden;
+  margin-top: 150px;
 }
 .sircle-right {
   width: 1882px;
@@ -319,6 +389,7 @@ footer {
   background: linear-gradient(to bottom,
             #fbfbfb 0 50%,
             #6274BE 50% 100%);
+  margin-top: 50px;
 } 
   .sircle-right {
       margin-left: -25vw;

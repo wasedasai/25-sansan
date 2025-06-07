@@ -18,17 +18,36 @@
     margin-right: 0;
     display: block;
     margin-top: 120px;
-    margin-bottom: 120px;
+    margin-bottom: 60px;
 }
-.template-decoration{
+.template-decration-right-top{
+    width: 24vw;
+    height: 24vw;
+    border-bottom-left-radius:1000px;
+    position: absolute;
+    z-index: -1;
+    background-color: #D54640;
+    top: 0%;
+    right: 0;
+}
+.template-decoration-left{
     width: 50%;
     height: 100%;
     position: absolute;
     z-index: -1;
     border-top-right-radius: 1000px;
     border-bottom-right-radius: 1000px;
-    background-color: #d9d9d9;
+    background-color: #6274BE;
     top: 51%;
+}
+.blockTitleContainer{
+    margin-left: 17%;
+}
+.sentence{
+    margin: 15px 0 0 17%;
+    padding-right: 70px;
+    margin-left: 17%;
+    font-size: 20px;
 }
   @media (min-width: 1200px){
     .title h2{
@@ -55,7 +74,7 @@
       line-height: 1.25;
       margin: 100px 0 0;
     }
-    .template-decoration{
+    .template-decoration-left{
       width: 70%;
       height: 42%;
       top: 43%;
@@ -65,12 +84,24 @@
       width: 95%;
       margin-top: 85px;
     }
+    .blockTitleContainer{
+    margin-left: 11%;
+    margin-top: 50px;
+  }
+  .sentence{
+      margin: 15px 0 0 7vw;
+      padding-right: 35px;
+      margin-left: 11%;
+      font-size: 16px;
+  }
   }
   @media (min-width: 768px) and (max-width: 1316px) and (orientation: portrait) {
-    .template-decoration{
+    .template-decoration-left{
       height: 62vw;
       max-height: 80%;
       top: 33%;
     }
   }
+
+  
 /* ここまでヒーロー */
