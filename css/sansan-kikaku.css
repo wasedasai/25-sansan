@@ -1,0 +1,73 @@
+.deco-blue{
+    background-color: #6274BE;
+}
+.deco-red{
+    background-color: #D54640;
+}
+.title h4{
+    margin: 150px 130px 0 130px;
+    font-size: 32px;
+    font-weight: 500;
+}
+.main-contents{
+    margin-top: 60px;
+}
+.sansan-kikaku-container{
+    margin: 15px 130px;
+}
+.sansan-kikaku-box{
+  /* レイアウト */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  /* —— ここがポイント —— */
+  aspect-ratio: 16 / 9;   /* 幅 : 高さ */
+  max-height: 220px; 
+  height: 20vw;     /* PC で伸びすぎないよう上限を設定 */
+  /* —— 以下は元のまま —— */
+  background-image:
+    linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+    url(../img/kumasute.JPG);
+  background-size: cover;
+  background-position: center;
+  transition: background-image .25s;
+}
+
+.sansan-kikaku-box p{
+    color: #fbfbfb;
+    font-size: 26px;
+    font-weight: 500;
+    margin: auto 0;
+    padding: 0 50px;
+    text-align: center;
+}
+.sansan-kikaku-box:hover{
+  /* グラデーションのアルファを 0 にして “透明” にする */
+  background-image:
+    linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+    url(../img/kumasute.JPG);
+}
+@media (max-width: 599px) {
+    .title h4{
+        margin: 60px 0 0 0;
+        font-size: 16px;
+    }
+    .main-contents{
+        margin-top: 40px;
+    }
+    .sansan-kikaku-container{
+        margin: 15px 0px 0 0;
+        padding: 0 7vw;
+    }
+    .sansan-kikaku-box{
+        aspect-ratio:  10 / 9; /* 高さを自動調整 */
+        padding: 20px 0;
+        height: 15vh;
+        max-height: 100px;
+    }
+    .sansan-kikaku-box p{
+        font-size: 14px;
+        padding: 0 20px;
+    }
+}
