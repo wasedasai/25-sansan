@@ -54,7 +54,7 @@
   /* 左右 17 % の余白はそのまま維持 */
   margin-inline:17%;
   display:grid;
-  gap:64px 4%;                                   /* 行 64 px・列 4 % の間隔 */
+  gap:64px 9%;                                   /* 行 64 px・列 4 % の間隔 */
   grid-template-columns:repeat(auto-fit,
                        minmax(300px,1fr));       /* 2 列→幅不足で自動 1 列 */
 }
@@ -79,16 +79,22 @@
   border-radius:8px;
   margin-top:30px;                               /* 元の余白はそのまま */
 }
-
+@media (max-width:1415px){
+  .blockTitle-small{
+    font-size: 16px;                           /* 任意：見出しを少し小さく */
+  }
+}
 /* ---------- ④ スマホ (〜767 px) は 1 列 + 余白を狭める ---------- */
 @media (max-width:767px){
   .second-contents{
     margin-left: 11%;    
     margin-right: 11%;                       /* 17 % → 7 vw に縮小 */
-    grid-template-columns:1fr;                   /* 1 列固定 */
+    grid-template-columns:1fr; 
+    gap: 0;   
+    margin-top: 40px;               /* 1 列固定 */
   }
   .second-contents .pdf-container .blockTitleContainer h1{
-    font-size:0.95rem;                           /* 任意：見出しを少し小さく */
+    font-size:16px;                           /* 任意：見出しを少し小さく */
   }
 }
   @media (min-width: 1200px){
@@ -121,6 +127,12 @@
       height: 42%;
       top: 43%;
       left: 0;
+    }
+    .template-decration-right-top{
+      width: 38vw;
+      height: 38vw;
+      top: 0;
+      right: 0;
     }
     .title img{
       width: 95%;
