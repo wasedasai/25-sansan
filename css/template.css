@@ -49,6 +49,48 @@
     margin-left: 17%;
     font-size: 20px;
 }
+/* ---------- ① 4 枚を並べるグリッド本体 ---------- */
+.second-contents{
+  /* 左右 17 % の余白はそのまま維持 */
+  margin-inline:17%;
+  display:grid;
+  gap:64px 4%;                                   /* 行 64 px・列 4 % の間隔 */
+  grid-template-columns:repeat(auto-fit,
+                       minmax(300px,1fr));       /* 2 列→幅不足で自動 1 列 */
+}
+
+/* ---------- ② 1 カード (= .pdf-container) の並び方 ---------- */
+.second-contents .pdf-container{
+  display:flex;
+  flex-direction:column;
+}
+
+/* 見出しの左インデントは不要なので 0 に上書き */
+.second-contents .pdf-container .blockTitleContainer{
+  margin-left:0;
+}
+
+/* ---------- ③ PDF プレビュー (iframe) ---------- */
+.second-contents .pdf-container iframe{
+  width:100%            !important;              /* インライン 30 % を上書き */
+  margin-left:0         !important;              /* インライン 17 % を上書き */
+  aspect-ratio:1/1.414;                          /* A4 縦横比を維持 */
+  border:4px solid #6274BE;
+  border-radius:8px;
+  margin-top:30px;                               /* 元の余白はそのまま */
+}
+
+/* ---------- ④ スマホ (〜767 px) は 1 列 + 余白を狭める ---------- */
+@media (max-width:767px){
+  .second-contents{
+    margin-left: 11%;    
+    margin-right: 11%;                       /* 17 % → 7 vw に縮小 */
+    grid-template-columns:1fr;                   /* 1 列固定 */
+  }
+  .second-contents .pdf-container .blockTitleContainer h1{
+    font-size:0.95rem;                           /* 任意：見出しを少し小さく */
+  }
+}
   @media (min-width: 1200px){
     .title h2{
       font-size: 96px;
