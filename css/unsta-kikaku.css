@@ -2,6 +2,7 @@
 .of{
   position: relative;
   background: url(../img/kikaku/openingfestival.jpg) center / cover no-repeat;
+  background-position: 50% 70%;
   overflow: hidden;
 }
 .of::before{
@@ -24,6 +25,7 @@
 .ef{
   position: relative;
   background: url(../img/kikaku/endingfestival.jpg) center / cover no-repeat;
+  background-position: 50% 70%;
   overflow: hidden;
 }
 .ef::before{
@@ -68,6 +70,7 @@
 .ce{
   position: relative;
   background: url(../img/kikaku/countdownevent.jpg) center / cover no-repeat;
+  background-position: 50% 75%;
   overflow: hidden;
 }
 .ce::before{
@@ -90,7 +93,7 @@
 .zenya{
   position: relative;
   background: url(../img/kikaku/zenya.jpg) center / cover no-repeat;
-  background-position: 50% 27%;
+  background-position: 50% 60%;
   overflow: hidden;
 }
 .zenya::before{
@@ -113,6 +116,7 @@
 .parade{
   position: relative;
   background: url(../img/kikaku/parade.jpg) center / cover no-repeat;
+  background-position: 50% 38%;
   overflow: hidden;
 }
 .parade::before{
@@ -135,7 +139,7 @@
 .tyuukan{
   position: relative;
   background: url(../img/kikaku/tyuukan.jpg) center / cover no-repeat; 
-  background-position: 50% 80%;
+  background-position: 50% 45%;
   overflow: hidden;
 }
 .tyuukan::before{
@@ -180,6 +184,7 @@
 .sotugyousei{
   position: relative;
   background: url(../img/kikaku/sotsugyo.jpg) center / cover no-repeat;
+  background-position: 50% 60%;
   overflow: hidden;
 }
 .sotugyousei::before{
@@ -202,6 +207,7 @@
 .workshop{
   position: relative;
   background: url(../img/kikaku/workshop.jpg) center / cover no-repeat;
+  background-position: 50% 50%;
   overflow: hidden;
 }
 .workshop::before{
