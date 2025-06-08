@@ -1,0 +1,87 @@
+.flow-index-container{
+    margin: 100px 130px ;
+}
+.flow-index-container h4{
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+.flow-index-container li{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.flow-index-container p{
+    font-size: 16px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.main-contents{
+    margin: 0 130px;
+}
+.flow-decoration{
+    position: absolute;
+    width: 545px;
+    height: 545px;
+    border-radius: 50%;
+    background-color: #D54640;
+    z-index: -1;
+    margin-left: -230px;
+}
+.main-contents h2{
+    font-size: 36px;
+    font-weight: 500;
+    margin-top: 160px;
+}
+.main-contents h3{
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 60px;
+}
+.kikaku-name{
+    font-size: 16px;
+    line-height: 1.8;
+    margin-top: 30px;
+    margin-bottom: 150px;
+}
+.step-title{
+    margin-top: 100px;
+    display: flex;
+
+    align-items: center;
+}
+.step-number{
+    text-align: center;
+}
+.step{
+    font-size: 20px;
+    font-weight: 500;
+}
+.number{
+    font-size: 48px;
+    font-weight: 500;
+    margin-top: -15px;
+}
+.step-name p{
+    font-size: 32px;
+    font-weight: 500;
+    margin-left: 45px;
+    margin-top: 15px;
+}
+.step-sentence{
+    margin-top: 30px;
+}
+.step-sentence p{
+    font-size: 20px;
+    line-height: 1.8;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+.step-sentence-bold{
+    font-weight: 500;
+}
+.area2{
+    margin-top: 200px;
+}
+.decoration-blue{
+    background-color: #6274BE;
+}
