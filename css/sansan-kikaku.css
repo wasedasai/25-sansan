@@ -26,13 +26,190 @@
   max-height: 220px; 
   height: 20vw;     /* PC で伸びすぎないよう上限を設定 */
   /* —— 以下は元のまま —— */
-  background-image:
-    linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
-    url(../img/kumasute.JPG);
   background-size: cover;
   background-position: center;
   transition: background-image .25s;
 }
+/* ここから */
+.kumasute{
+  position: relative;
+  background: url(../img/kikaku/kumasute.jpg) center / cover no-repeat;
+  overflow: hidden;
+}
+.kumasute::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.5);
+  transition: opacity .25s;
+  z-index: 0;
+}
+.kumasute:hover::before{
+  opacity: .3;
+}
+.kumasute > *{
+  position: relative;
+  z-index: 1;
+}
+/* ここまで */
+/* ここから */
+.camsta{
+  position: relative;
+  background: url(../img/kikaku/camsta.jpg) center / cover no-repeat;
+  overflow: hidden;
+}
+.camsta::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.5);
+  transition: opacity .25s;
+  z-index: 0;
+}
+.camsta:hover::before{
+  opacity: .3;
+}
+.camsta > *{
+  position: relative;
+  z-index: 1;
+}
+/* ここまで */
+/* ここから */
+.street{
+  position: relative;
+  background: url(../img/kikaku/street.jpg) center / cover no-repeat;
+  overflow: hidden;
+}
+.street::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.5);
+  transition: opacity .25s;
+  z-index: 0;
+}
+.street:hover::before{
+  opacity: .3;
+}
+.street > *{
+  position: relative;
+  z-index: 1;
+}
+/* ここまで */
+/* ここから */
+.drama{
+  position: relative;
+  background: url(../img/kikaku/.jpg) center / cover no-repeat;
+  overflow: hidden;
+}
+.drama::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.5);
+  transition: opacity .25s;
+  z-index: 0;
+}
+.drama:hover::before{
+  opacity: .3;
+}
+.drama > *{
+  position: relative;
+  z-index: 1;
+}
+/* ここまで */
+/* ここから */
+.koudou{
+  position: relative;
+  background: url(../img/kikaku/koudou.jpg) center / cover no-repeat;
+  background-position: 50% 27%;
+  overflow: hidden;
+}
+.koudou::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.5);
+  transition: opacity .25s;
+  z-index: 0;
+}
+.koudou:hover::before{
+  opacity: .3;
+}
+.koudou > *{
+  position: relative;
+  z-index: 1;
+}
+/* ここまで */
+/* ここから */
+.kyoushitsu{
+  position: relative;
+  background: url(../img/kikaku/kyoshitsu.jpg) center / cover no-repeat;
+  overflow: hidden;
+}
+.kyoushitsu::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.5);
+  transition: opacity .25s;
+  z-index: 0;
+}
+.kyoushitsu:hover::before{
+  opacity: .3;
+}
+.kyoushitsu > *{
+  position: relative;
+  z-index: 1;
+}
+/* ここまで */
+/* ここから */
+.art{
+  position: relative;
+  background: url(../img/kikaku/art.jpg) center / cover no-repeat; 
+  background-position: 50% 80%;
+  overflow: hidden;
+}
+.art::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.5);
+  transition: opacity .25s;
+  z-index: 0;
+}
+.art:hover::before{
+  opacity: .3;
+}
+.art > *{
+  position: relative;
+  z-index: 1;
+}
+/* ここまで */
+/* ここから */
+.inshoku{
+  position: relative;
+  background: url(../img/kikaku/inshoku.jpg) center / cover no-repeat;
+  overflow: hidden;
+}
+.inshoku::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.5);
+  transition: opacity .25s;
+  z-index: 0;
+}
+.inshoku:hover::before{
+  opacity: .3;
+}
+.inshoku > *{
+  position: relative;
+  z-index: 1;
+}
+/* ここまで */
+
+
 
 .sansan-kikaku-box p{
     color: #fbfbfb;
@@ -42,12 +219,7 @@
     padding: 0 50px;
     text-align: center;
 }
-.sansan-kikaku-box:hover{
-  /* グラデーションのアルファを 0 にして “透明” にする */
-  background-image:
-    linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
-    url(../img/kumasute.JPG);
-}
+
 a{
     text-decoration: none;
 }
