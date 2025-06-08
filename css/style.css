@@ -31,21 +31,25 @@
     height: 100vh;
     background-color: #ffffff;
     position: relative;
-
+    display: flex;
+     align-items: flex-end; /* ← 底に揃える */
+  justify-content: space-between; /* 左右に分ける */
+  padding-bottom: 2%; /* ← bottom: 2% に相当 */
+  box-sizing: border-box; /* paddingを含めたレイアウト */
 }
 .top_main_image {
     max-width: 63vw;
     height: auto;
-    right: 0;
+    /* right: 0; */
     bottom: 2%;
-    position: absolute;
+    /* position: absolute; */
 }
 .entrance_sentence {
-    position: absolute;
+    /* position: absolute; */
     width: calc(100vw - 63vw);
-    height: 50vh;
-    bottom: 2%;
-    display: flex;            /* もともとの設定 */
+    /* height: 50vh; */
+    bottom: 2%  !;
+    display: flex;            
     flex-direction: column;   /* ←横並び → 縦並びに変更 */
     justify-content: space-evenly; /* もしくは space-between */
     align-items: center;      /* 横方向は中央寄せ */
@@ -56,15 +60,41 @@
     /* font-size: 32px; */
     font-size: 2vw;
     font-weight: 450;
-
+    margin-bottom: 50px;
 }
 .entrance_subtitle {
     width: 33vw;
     /* font-size: 16px; */
     font-size: 1.2vw;
-
+    margin-bottom: 50px;
+}
+.entrance_subtitle2 {
+    width: 33vw;
+    /* font-size: 16px; */
+    font-size: 1.2vw;
 }
 /* ここまでentrance */
+/* ここからうたさん */
+.utasan {
+    width: 90vw;
+    height: 1000px;
+    position: relative;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.utaver {
+    height: 60vh !important;
+}
+.red {
+    color: #d54640 !important;
+}
+.blue {
+    background-color: #6274BE !important;
+}
+/* ここまでうたさん */
 
 /* ここからnews */
 .news {
@@ -96,6 +126,11 @@
 .title-block {
     font-size: 20px;
     width: 100px;
+    position: absolute;
+}
+.title-block-president {
+        font-size: 20px;
+    width: 300px;
     position: absolute;
 }
 .news_box {
@@ -186,7 +221,7 @@ z-index: 2;
     border-radius: 50%;
     position: absolute;
     /* background-color: #f5f5f5; */
-    background-color: #6274be;
+    background-color: #d54640;
     z-index: 15;
     margin-top: -100px;
     margin-left: -100px;
@@ -465,6 +500,20 @@ background-color: #ffffff;
     height: auto;
 }
 /* ここまでよくある質問 */
+
+/* ここからsp版 */
+@media screen and (max-width: 768px) {
+.pc {
+    display: none;}
+}
+.sp {
+    display: block;
+}
+/* ここからentrance */
+
+/* ここまでentrance  */
+
+/* ここまでsp版 */
 
 /* ここからfooter  */
 footer {
