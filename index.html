@@ -507,7 +507,7 @@ document.addEventListener('DOMContentLoaded', () => {
               セクションの上端が画面上端に着いたら 1
        clamp で 0〜1 に丸める
     */
-   const k= 3.0;
+   const k= 2;
     let progress = (vh - rect.top) / (rect.height + vh);
     progress = Math.max(0, Math.min(1, progress)); 
 
