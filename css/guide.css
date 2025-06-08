@@ -1,0 +1,32 @@
+.flow-decoration{
+    position: absolute;
+    width: 545px;
+    height: 545px;
+    border-radius: 50%;
+    background-color: #D54640;
+    z-index: -1;
+    margin-left: -100px;
+}
+.title p{
+    margin: 30px 130px 70px 130px;
+    font-size: 20px;
+}
+.title h4{
+    margin-top:290px;
+}
+@media (max-width: 599px) {
+    .flow-decoration{
+    width: 300px;          /* 小さくする */
+    height: 300px;        /* 小さくする */
+    margin-left: -70px;   /* 中央に配置 */           /* 上端に配置 */
+  }
+  .title p{
+    margin: 30px 0 40px 0; /* 左右のマージンを削除 */
+    font-size: 14px; 
+    padding-right: 7vw;     /* フォントサイズを小さくする */
+  }
+    .title h4{
+        margin-top: 170px; /* 上端に配置 */
+        font-size: 16px;   /* フォントサイズを小さくする */
+    }
+}
