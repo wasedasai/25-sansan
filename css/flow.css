@@ -126,8 +126,8 @@
 
   /* セクション見出しと装飾円 -------------------- */
   .flow-decoration{
-    width: 200px;          /* 小さくする */
-    height: 200px;        /* 小さくする */
+    width: 335px;          /* 小さくする */
+    height: 335px;        /* 小さくする */
     margin-left: -70px;   /* 中央に配置 */           /* 上端に配置 */
   }
   .main-contents h2{
