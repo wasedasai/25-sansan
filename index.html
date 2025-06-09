@@ -200,7 +200,7 @@
                     <div class="events-step">step</div>
                     <div class="events-number">01</div>
                 </div>
-                <div class="events_title">参加の流れ</div>
+                <a href="" class="nodecoration"><div class="events_title">参加の流れ</div></a>
                 <div class="event_allow"><a href="#" class="triangle-right"></a></div>
             </div>
         </div>
@@ -210,7 +210,7 @@
                     <div class="events-step">step</div>
                     <div class="events-number">02</div>
                 </div>
-                <div class="events_title">参加の手引き</div>
+                <a href="" class="nodecoration"><div class="events_title">参加の手引き</div></a>
                 <div class="event_allow"><a href="#" class="triangle-right"></a></div>
             </div>
         </div>
@@ -220,7 +220,7 @@
                     <div class="events-step">step</div>
                     <div class="events-number">03</div>
                 </div>
-                <div class="events_title">プリエントリフォーム</div>
+                <a href="" class="nodecoration"><div class="events_title">プリエントリフォーム</div></a>
                 <div class="event_allow"><a href="#" class="triangle-right"></a></div>
             </div>
         </div>
@@ -249,11 +249,11 @@
       <h1 class="blockTitle sp">参加団体・参加者企画</h1>
     </div>
         <div class="faq-right">
-            <div class="events-button events-button1">
+            <a href=""><div class="events-button events-button1">
                 <a href="#kikaku-group" class="events-button-text">大隈講堂前ステージ企画</a>
                     <div class="event_allow">
                         <a href="#" class="triangle-right triangle-event"></a>
-                    </div>
+                    </div></a>
             </div>
 
             <div class="events-button events-button1">
@@ -316,10 +316,12 @@
         <div class="faq-left2">
             <div class="faq-left-sentence2">
             </div>
+            <a href="" class="nodecoration">
             <div class="faq-left-button2">
                 <img src="img/yajirushi-hukuzatsu.png" alt="" class="faq-left-button2-yajirushi">
                 <div class="faq-left-button2-text">詳しくみる</div>
             </div>
+        </a>
         </div>
         <div class="faq-right2">
                         <div class="events-button events-button1">
@@ -442,12 +444,14 @@
                 </div>
             </div>
         </div>
+        <a href="" class="nodecoration">
         <div class="frequency-flex">
             <div class="frecuency-button-box">
             <div class="frecuency-button">
             <img src="img/naga-iyajirushi.png" alt="" class="nagayajirushi">
             <div class="frecuency-button-text">詳しくみる</div>
-        </div>      
+        </div>
+    </a>      
         </div>
 
         </div>
@@ -569,6 +573,7 @@ const observer = new IntersectionObserver(callback, options);
 
 targets.forEach(el => observer.observe(el));
 
+if (window.innerWidth >= 768) {
 // document.addEventListener('DOMContentLoaded', () => {
 //   const steps   = document.querySelector('.steps');        
 //   const circle  = document.querySelector('.steps_circle'); 
@@ -594,7 +599,7 @@ targets.forEach(el => observer.observe(el));
 //   window.addEventListener('scroll',  updateShift, { passive:true });
 //   window.addEventListener('resize',  updateShift);
 // });
-
+}
 
 document.addEventListener('DOMContentLoaded', () => {
   const btn   = document.querySelector('.uta-toggle');
