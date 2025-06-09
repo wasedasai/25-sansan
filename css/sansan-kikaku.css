@@ -1,0 +1,248 @@
+.deco-blue{
+    background-color: #6274BE;
+}
+.deco-red{
+    background-color: #D54640;
+}
+.title h4{
+    margin: 150px 130px 0 130px;
+    font-size: 32px;
+    font-weight: 500;
+}
+.main-contents{
+    margin-top: 60px;
+}
+.sansan-kikaku-container{
+    margin: 15px 130px;
+}
+.sansan-kikaku-box{
+  /* レイアウト */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  /* —— ここがポイント —— */
+  aspect-ratio: 16 / 9;   /* 幅 : 高さ */
+  max-height: 220px; 
+  height: 20vw;     /* PC で伸びすぎないよう上限を設定 */
+  /* —— 以下は元のまま —— */
+  background-size: cover;
+  background-position: center;
+  transition: background-image .25s;
+}
+/* ここから */
+.kumasute{
+  position: relative;
+  background: url(../img/kikaku/kumasute.jpg) center / cover no-repeat;
+  overflow: hidden;
+}
+.kumasute::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.5);
+  transition: opacity .25s;
+  z-index: 0;
+}
+.kumasute:hover::before{
+  opacity: .3;
+}
+.kumasute > *{
+  position: relative;
+  z-index: 1;
+}
+/* ここまで */
+/* ここから */
+.camsta{
+  position: relative;
+  background: url(../img/kikaku/camsta.jpg) center / cover no-repeat;
+  overflow: hidden;
+}
+.camsta::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.5);
+  transition: opacity .25s;
+  z-index: 0;
+}
+.camsta:hover::before{
+  opacity: .3;
+}
+.camsta > *{
+  position: relative;
+  z-index: 1;
+}
+/* ここまで */
+/* ここから */
+.street{
+  position: relative;
+  background: url(../img/kikaku/street.jpg) center / cover no-repeat;
+  overflow: hidden;
+}
+.street::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.5);
+  transition: opacity .25s;
+  z-index: 0;
+}
+.street:hover::before{
+  opacity: .3;
+}
+.street > *{
+  position: relative;
+  z-index: 1;
+}
+/* ここまで */
+/* ここから */
+.drama{
+  position: relative;
+  background: url(../img/kikaku/.jpg) center / cover no-repeat;
+  overflow: hidden;
+}
+.drama::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.5);
+  transition: opacity .25s;
+  z-index: 0;
+}
+.drama:hover::before{
+  opacity: .3;
+}
+.drama > *{
+  position: relative;
+  z-index: 1;
+}
+/* ここまで */
+/* ここから */
+.koudou{
+  position: relative;
+  background: url(../img/kikaku/koudou.jpg) center / cover no-repeat;
+  background-position: 50% 27%;
+  overflow: hidden;
+}
+.koudou::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.5);
+  transition: opacity .25s;
+  z-index: 0;
+}
+.koudou:hover::before{
+  opacity: .3;
+}
+.koudou > *{
+  position: relative;
+  z-index: 1;
+}
+/* ここまで */
+/* ここから */
+.kyoushitsu{
+  position: relative;
+  background: url(../img/kikaku/kyoshitsu.jpg) center / cover no-repeat;
+  overflow: hidden;
+}
+.kyoushitsu::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.5);
+  transition: opacity .25s;
+  z-index: 0;
+}
+.kyoushitsu:hover::before{
+  opacity: .3;
+}
+.kyoushitsu > *{
+  position: relative;
+  z-index: 1;
+}
+/* ここまで */
+/* ここから */
+.art{
+  position: relative;
+  background: url(../img/kikaku/art.jpg) center / cover no-repeat; 
+  background-position: 50% 80%;
+  overflow: hidden;
+}
+.art::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.5);
+  transition: opacity .25s;
+  z-index: 0;
+}
+.art:hover::before{
+  opacity: .3;
+}
+.art > *{
+  position: relative;
+  z-index: 1;
+}
+/* ここまで */
+/* ここから */
+.inshoku{
+  position: relative;
+  background: url(../img/kikaku/inshoku.jpg) center / cover no-repeat;
+  overflow: hidden;
+}
+.inshoku::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.5);
+  transition: opacity .25s;
+  z-index: 0;
+}
+.inshoku:hover::before{
+  opacity: .3;
+}
+.inshoku > *{
+  position: relative;
+  z-index: 1;
+}
+/* ここまで */
+
+
+
+.sansan-kikaku-box p{
+    color: #fbfbfb;
+    font-size: 26px;
+    font-weight: 500;
+    margin: auto 0;
+    padding: 0 50px;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+@media (max-width: 599px) {
+    .title h4{
+        margin: 60px 0 0 0;
+        font-size: 16px;
+    }
+    .main-contents{
+        margin-top: 40px;
+    }
+    .sansan-kikaku-container{
+        margin: 15px 0px 0 0;
+        padding: 0 7vw;
+    }
+    .sansan-kikaku-box{
+        aspect-ratio:  10 / 9; /* 高さを自動調整 */
+        padding: 20px 0;
+        height: 15vh;
+        max-height: 100px;
+    }
+    .sansan-kikaku-box p{
+        font-size: 14px;
+        padding: 0 20px;
+    }
+}

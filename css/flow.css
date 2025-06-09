@@ -1,0 +1,192 @@
+.flow-index-container{
+    margin: 100px 130px ;
+}
+.flow-index-container h4{
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+.flow-index-container li{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.flow-index-container p{
+    font-size: 16px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.main-contents{
+    margin: 0 130px;
+}
+.flow-decoration{
+    position: absolute;
+    width: 545px;
+    height: 545px;
+    border-radius: 50%;
+    background-color: #D54640;
+    z-index: -1;
+    margin-left: -230px;
+}
+.main-contents h2{
+    font-size: 36px;
+    font-weight: 500;
+    margin-top: 160px;
+}
+.main-contents h3{
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 60px;
+}
+.kikaku-name{
+    font-size: 16px;
+    line-height: 1.8;
+    margin-top: 30px;
+    margin-bottom: 150px;
+}
+.step-title{
+    margin-top: 100px;
+    display: flex;
+
+    align-items: center;
+}
+.step-number{
+    text-align: center;
+}
+.step{
+    font-size: 20px;
+    font-weight: 500;
+}
+.number{
+    font-size: 48px;
+    font-weight: 500;
+    margin-top: -15px;
+}
+.step-name p{
+    font-size: 32px;
+    font-weight: 500;
+    margin-left: 45px;
+    margin-top: 15px;
+}
+.step-sentence{
+    margin-top: 30px;
+}
+.step-sentence p{
+    font-size: 20px;
+    line-height: 1.8;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+.step-sentence-bold{
+    font-weight: 500;
+}
+.area2{
+    margin-top: 200px;
+}
+.decoration-blue{
+    background-color: #6274BE;
+}
+.pc-br{
+    display: block;
+}
+.sp-br{
+    display: none;
+}
+/* ───────── スマホ版（≤599px） ───────── */
+@media (max-width: 599px) {
+    .pc-br{
+        display: none;
+    }
+    .sp-br{
+        display: block;
+    }
+    .flow-index-container{
+        margin: 50px 0;
+    }
+    .flow-index-container h4{
+        font-size: 16px;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+    .flow-index-container ul{
+        margin-top: 30px;
+    }
+    .flow-index-container li{
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+    .flow-index-container p{
+        font-size: 13px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+  /* コンテンツ全体の左右余白を狭める */
+  .main-contents{
+    margin: 0 20px;
+  }
+
+  /* セクション見出しと装飾円 -------------------- */
+  .flow-decoration{
+    width: 335px;          /* 小さくする */
+    height: 335px;        /* 小さくする */
+    margin-left: -70px;   /* 中央に配置 */           /* 上端に配置 */
+  }
+  .main-contents h2{
+    font-size: 20px;
+    margin-top: 78px;      /* 円と重ならない位置から開始 */
+  }
+  .main-contents h3{
+    font-size: 16px;
+    margin-top: 30px;
+  }
+  .kikaku-name{
+    font-size: 13px;
+    line-height: 1.7;
+    margin-top: 18px;
+    margin-bottom: 50px;
+  }
+
+  /* step 見出し ------------------------------- */
+  .step-title{
+    margin-top: 60px;
+    align-items: flex-end;  /* 数字とタイトルのベースライン合わせ */
+  }
+  .step-number .step{
+    font-size: 16px;
+  }
+  .step-number .number{
+    font-size: 36px;
+    margin-top: -8px;
+  }
+  .step-name p{
+    font-size: 20px;
+    margin-left: 18px; 
+    margin-bottom: 11px
+         /* タイトルの横詰め */;
+  }
+
+  /* 説明文 ------------------------------------ */
+  .step-sentence{
+    margin-top: 14px;
+  }
+  .step-sentence p{
+    font-size: 14px;
+    line-height: 1.7;
+  }
+  .step-sentence-bold{
+    font-weight: 600;       /* 少し強調がわかりやすくなる */
+  }
+  .margin-twoline{
+    margin-bottom: -15px;
+  }
+  /* ２つ目の流れ（青）との間隔 ------------------ */
+  .area2{
+    margin-top: 140px;
+  }
+
+  /* 青い円も同じ大きさで上書き ------------------ */
+  .decoration-blue,
+  .decoration-red{
+    width: 300px;
+    height: 300px;
+  }
+}

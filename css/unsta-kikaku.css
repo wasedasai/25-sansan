@@ -1,0 +1,228 @@
+/* ここから */
+.of{
+  position: relative;
+  background: url(../img/kikaku/openingfestival.jpg) center / cover no-repeat;
+  background-position: 50% 70%;
+  overflow: hidden;
+}
+.of::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.5);
+  transition: opacity .25s;
+  z-index: 0;
+}
+.of:hover::before{
+  opacity: .3;
+}
+.of > *{
+  position: relative;
+  z-index: 1;
+}
+/* ここまで */
+/* ここから */
+.ef{
+  position: relative;
+  background: url(../img/kikaku/endingfestival.jpg) center / cover no-repeat;
+  background-position: 50% 70%;
+  overflow: hidden;
+}
+.ef::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.5);
+  transition: opacity .25s;
+  z-index: 0;
+}
+.ef:hover::before{
+  opacity: .3;
+}
+.ef > *{
+  position: relative;
+  z-index: 1;
+}
+/* ここまで */
+/* ここから */
+.tenkan{
+  position: relative;
+  background: url(../img/kikaku/.jpg) center / cover no-repeat;
+  overflow: hidden;
+}
+.tenkan::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.5);
+  transition: opacity .25s;
+  z-index: 0;
+}
+.tenkan:hover::before{
+  opacity: .3;
+}
+.tenkan > *{
+  position: relative;
+  z-index: 1;
+}
+/* ここまで */
+/* ここから */
+.ce{
+  position: relative;
+  background: url(../img/kikaku/countdownevent.jpg) center / cover no-repeat;
+  background-position: 50% 75%;
+  overflow: hidden;
+}
+.ce::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.5);
+  transition: opacity .25s;
+  z-index: 0;
+}
+.ce:hover::before{
+  opacity: .3;
+}
+.ce > *{
+  position: relative;
+  z-index: 1;
+}
+/* ここまで */
+/* ここから */
+.zenya{
+  position: relative;
+  background: url(../img/kikaku/zenya.jpg) center / cover no-repeat;
+  background-position: 50% 60%;
+  overflow: hidden;
+}
+.zenya::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.5);
+  transition: opacity .25s;
+  z-index: 0;
+}
+.zenya:hover::before{
+  opacity: .3;
+}
+.zenya > *{
+  position: relative;
+  z-index: 1;
+}
+/* ここまで */
+/* ここから */
+.parade{
+  position: relative;
+  background: url(../img/kikaku/parade.jpg) center / cover no-repeat;
+  background-position: 50% 38%;
+  overflow: hidden;
+}
+.parade::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.5);
+  transition: opacity .25s;
+  z-index: 0;
+}
+.parade:hover::before{
+  opacity: .3;
+}
+.parade > *{
+  position: relative;
+  z-index: 1;
+}
+/* ここまで */
+/* ここから */
+.tyuukan{
+  position: relative;
+  background: url(../img/kikaku/tyuukan.jpg) center / cover no-repeat; 
+  background-position: 50% 45%;
+  overflow: hidden;
+}
+.tyuukan::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.5);
+  transition: opacity .25s;
+  z-index: 0;
+}
+.tyuukan:hover::before{
+  opacity: .3;
+}
+.tyuukan > *{
+  position: relative;
+  z-index: 1;
+}
+/* ここまで */
+/* ここから */
+.kaihatsu{
+  position: relative;
+  background: url(../img/kikaku/kaihatsu.jpg) center / cover no-repeat;
+  overflow: hidden;
+}
+.kaihatsu::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.5);
+  transition: opacity .25s;
+  z-index: 0;
+}
+.kaihatsu:hover::before{
+  opacity: .3;
+}
+.kaihatsu > *{
+  position: relative;
+  z-index: 1;
+}
+/* ここまで */
+/* ここから */
+.sotugyousei{
+  position: relative;
+  background: url(../img/kikaku/sotsugyo.jpg) center / cover no-repeat;
+  background-position: 50% 60%;
+  overflow: hidden;
+}
+.sotugyousei::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.5);
+  transition: opacity .25s;
+  z-index: 0;
+}
+.sotugyousei:hover::before{
+  opacity: .3;
+}
+.sotugyousei > *{
+  position: relative;
+  z-index: 1;
+}
+/* ここまで */
+/* ここから */
+.workshop{
+  position: relative;
+  background: url(../img/kikaku/workshop.jpg) center / cover no-repeat;
+  background-position: 50% 50%;
+  overflow: hidden;
+}
+.workshop::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.5);
+  transition: opacity .25s;
+  z-index: 0;
+}
+.workshop:hover::before{
+  opacity: .3;
+}
+.workshop > *{
+  position: relative;
+  z-index: 1;
+}
+/* ここまで */
