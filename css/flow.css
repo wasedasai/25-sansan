@@ -71,13 +71,18 @@
     margin-top: 30px;
 }
 .step-sentence p{
-    font-size: 20px;
     line-height: 1.8;
     margin-top: 10px;
     margin-bottom: 0px;
 }
+.step-sentence-regular{
+    font-weight: 400;
+    font-size: 20px;
+}
 .step-sentence-bold{
     font-weight: 500;
+    font-size: 24px;
+    margin-top: 25px;
 }
 .area2{
     margin-top: 200px;

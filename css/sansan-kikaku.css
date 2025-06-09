@@ -99,7 +99,8 @@
 /* ここから */
 .drama{
   position: relative;
-  background: url(../img/kikaku/.jpg) center / cover no-repeat;
+  background: url(../img/kikaku/drama.jpg) center / cover no-repeat;
+  background-position: 50% 73%;
   overflow: hidden;
 }
 .drama::before{
