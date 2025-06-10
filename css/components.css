@@ -75,21 +75,21 @@ header{
     width:min(380px,85%);
     margin:0 auto;
     margin-left: 35%;
-    padding:110px 0 60px;
+    padding:110px 0 56px;
     display:flex;
     flex-direction:column;
-    gap:45px;
+    gap:38px;
   }
   .nav-heading{
     font-family:"Zen Kaku Gothic New",sans-serif;
     font-size:40px;font-weight:400;
-    margin-bottom:20px;color: #fbfbfb
+    margin-bottom:15px;color: #fbfbfb
   }
   .nav-list{ list-style:none;padding-left:0; }
-  .nav-list li{ margin:12px 0px; }
+  .nav-list li{ margin:10px 0px; }
   .nav-list a{
     font-family:"Zen Kaku Gothic New",sans-serif;
-    font-size:16px;line-height:1.4;
+    font-size:20px;line-height:1.6;
     color:#fbfbfb;text-decoration:none;
     transition:opacity .25s;
   }
@@ -331,10 +331,10 @@ gap:0;                               /* マージン要らなければ 0 */
 .footer-content-content a{          /* 通常状態 */
 color:#fbfbfb;                       /* 任意の初期色 */
 text-decoration:none;
-transition:color .3s;             /* なめらかに変化 */
+transition:opacity .25s;             /* なめらかに変化 */
 }
 .footer-content-content a:hover{    /* ホバー時 */
-color:#fbfbfb;                       /* 変えたい色に */
+opacity: 0.6;                       /* 変えたい色に */
 }
 /* ─────────────────────────────── */
 
@@ -370,8 +370,11 @@ color:#fbfbfb;                       /* 変えたい色に */
 .sns-icon-footer {
   width: 36px;
   height: 36px;
+  transition: opacity 0.3s ease;
 }
-
+.sns-icon-footer:hover {
+  opacity: 0.6;
+}
 
 @media (min-width: 768px) and (max-width: 1024px){
   .sircle-right {
