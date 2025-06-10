@@ -47,7 +47,8 @@
 /* ここから */
 .tenkan{
   position: relative;
-  background: url(../img/kikaku/.jpg) center / cover no-repeat;
+  background: url(../img/kikaku/tenkan.jpg) center / cover no-repeat;
+  background-position: 50% 50%;
   overflow: hidden;
 }
 .tenkan::before{
