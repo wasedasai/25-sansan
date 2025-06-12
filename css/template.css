@@ -75,6 +75,9 @@
   border-radius:8px;
   margin-top:30px;
 }
+.camsta-guide{
+  font-size: 20px;
+}
 @media (max-width:1415px){
   .blockTitle-small{
     font-size: 16px;
@@ -92,13 +95,13 @@
     font-size:16px;
   }
 }
-  @media (min-width: 1200px){
+  @media (min-width: 1415px){
     .title h2{
       font-size: 96px;
     }
   }
   /* ===== Tablet (768〜1199px) ===== */
-  @media (min-width: 768px) and (max-width: 1316px){
+  @media (min-width: 768px) and (max-width: 1415px){
     .title h2{
       font-size: clamp(48px, 6vw, 72px);
     }
