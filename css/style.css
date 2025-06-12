@@ -6,7 +6,7 @@
 }
 
 .white {
-    background-color: #ffffff;
+    background-color: #fbfbfb;
 }
 .d54640 {
     background-color: #d54640 !important;
@@ -29,13 +29,16 @@
   opacity: 1;
   transform: translateY(0);
 }
-
+.nodecoration {
+    text-decoration: none;
+    color: #000;
+}
 
 /* ここからentrance */
 .entrance {
     width: 100vw;
     height: 100vh;
-    background-color: #ffffff;
+    background-color: #fbfbfb;
     position: relative;
     display: flex;
      align-items: flex-end; /* ← 底に揃える */
@@ -121,7 +124,7 @@
     height: 60vh;
     position: relative;
     overflow: hidden;
-    background-color: #ffffff;
+    background-color: #fbfbfb;
 }
 /* .news_contents {
     width: 88%;
@@ -214,7 +217,7 @@ z-index: 2;
     position: relative;
     z-index: 20;
     overflow: visible;
-    background-color: #ffffff;
+    background-color: #fbfbfb;
 }
 .steps_contents{
     position: absolute;
@@ -249,13 +252,13 @@ z-index: 2;
         width: 545px;
     height: 545px;
     position: absolute;
-    background-color: #ffffff;
+    background-color: #fbfbfb;
     z-index: 12;
     margin-top: -100px;
     margin-left: -100px;
 }
 .white-color {
-    color: #ffffff;
+    color: #fbfbfb;
 }
 /* ここまでsteps */
 
@@ -267,7 +270,7 @@ z-index: 2;
     z-index: 20;
     overflow: visible;
     /* background-color: blue; */
-    background-color: #ffffff;
+    background-color: #fbfbfb;
 }
 .event_box {
     display: flex;
@@ -327,7 +330,7 @@ justify-content: center;
 /* ここからfaq */
 .faqver {
     padding-top: 15vh;
-    background-color: #ffffff;
+    background-color: #fbfbfb;
 }
 .faq {
     display: flex;
@@ -335,13 +338,13 @@ justify-content: center;
     /* margin-top: -30vh; */
 }
 .faq-left {
-    background-color: #ffffff;
+    background-color: #fbfbfb;
     width: 30vw;
     min-height: 100vh;
     z-index: -11;
 }
 .faq-left-sentence {
-background-color: #ffffff;
+background-color: #fbfbfb;
   width: 29vw;  
   height: 29vw;
   border-right: #000 solid 1px; /* 右側に線を引く */
@@ -362,7 +365,7 @@ background-color: #ffffff;
     width: 100vw;
     height: 20vh;
     z-index: 20;
-    background-color: #ffffff;
+    background-color: #fbfbfb;
 }
 .faq2 {
     display: flex;
@@ -376,7 +379,7 @@ background-color: #ffffff;
     min-height: 100vh;
 }
 /* .faq-left-sentence2 {
-background-color: #ffffff;
+background-color: #fbfbfb;
   width: 29vw;  
   height: 29vw;
   border-right: #000 solid 1px; 
@@ -397,6 +400,11 @@ background-color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.faq-left-button2:hover {
+    transition: transform 0.1s ease;
+    transform: translate(10px, 0);
+    font-weight: 500;
 }
 .faq-left-button2-yajirushi {
     width: 52px;
@@ -428,12 +436,20 @@ background-color: #ffffff;
     background-image: url(../img/top-button.png);
     width: 753px;
     height: 165px;
+    transition: transform 0.1s ease; /* 画像の拡大縮小をスムーズに */
+    /* filter: sepia(100%); */
+}
+.events-button:hover {
+    transform: scale(1.05); /* 画像を5%大きくする */
+     /* filter: sepia(100%); */
+}
+.events-button-text:hover {
 }
 .events-button-text {
     width: 700px;
     text-decoration: none;
     font-size: 20px;
-    color: #ffffff;
+    color: #fbfbfb;
     /* text-align: right; */
     display: inline-block;
     margin-left: 50px;
@@ -441,7 +457,7 @@ background-color: #ffffff;
 .triangle-event {
     width: 53px;
     /* text-align: left; */
-    border-color: transparent transparent transparent #ffffff;
+    border-color: transparent transparent transparent #fbfbfb;
     border-width: 9px 0 9px 10px;
     /* margin-right: 50px; */
     margin-left: 0;
@@ -466,7 +482,7 @@ background-color: #ffffff;
 .frequency {
     width: 100vw;
     height: 5;
-    background-color: #ffffff;
+    background-color: #fbfbfb;
     /* margin-top: -5vh; */
 }
 .frequency-question {
@@ -501,6 +517,11 @@ background-color: #ffffff;
 .frecuency-button-box {
     width: 80vw;
     margin: 0 auto;
+}
+.frecuency-button-box:hover {
+    transform:scaleX(1.05);
+    transition: transform 0.1s ease;
+    font-weight: 500;
 }
 .frecuency-button {
     width: 250px;
@@ -629,7 +650,7 @@ margin-left: 5vw;
     margin-bottom: 50px;
     color: #000;
     text-decoration: none;
-    background-color: #ffffff;
+    background-color: #fbfbfb;
   }
 /* .utasan {
 width: 95vw; 
@@ -814,5 +835,5 @@ margin-top: 70px;
 
 /* ここからfooter  */
 footer {
-    background-color: #ffffff;
+    background-color: #fbfbfb;
 }
