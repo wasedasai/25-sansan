@@ -86,7 +86,7 @@
 /* ここからうたさん */
 .utasan2 {
     width: 100vw;
-    height: 1300px;
+    height: 190vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -94,8 +94,9 @@
     font-size: 20px;
 }
 .utasan-sentence {
-    width: 55vw;
-
+    width: 88%;
+    margin-left: 10vw;
+    line-height: 2;
 }
 .utasan-hidden {
     width: 90vw;
@@ -105,7 +106,7 @@
     justify-content: center;
 }
 .utaver {
-    height: 500px !important;
+    height: 33vh !important;
 }
 .uta-more {           /* デフォルトは表示 */
   transition:max-height .35s ease;
@@ -238,21 +239,20 @@ z-index: 2;
     font-size: 20px;
 }
 .steps_circle {
-    width: 545px;
-    height: 545px;
+    width: 65vh;
+    height: 65vh;
     border-radius: 50%;
     position: absolute;
     /* background-color: #f5f5f5; */
     background-color: #d54640;
     z-index: 15;
-    margin-top: -100px;
-    margin-left: -100px;
+    margin-top: -17vh;
+    /* margin-left: -100px; */
 }
 .step_circle_back {
         width: 545px;
     height: 545px;
     position: absolute;
-    background-color: #fbfbfb;
     z-index: 12;
     margin-top: -100px;
     margin-left: -100px;
@@ -271,6 +271,7 @@ z-index: 2;
     overflow: visible;
     /* background-color: blue; */
     background-color: #fbfbfb;
+    overflow: hidden;
 }
 .event_box {
     display: flex;
@@ -281,19 +282,19 @@ z-index: 2;
 }
 .events_contents1 {
     height: 180px;
-    width: 70%;
+    width: 78%;
     border-bottom: #000 solid 1px;
     border-top: #000 solid 1px;
     margin: 0 auto;
 }
 .events_contents2 {
     height: 180px;
-    width: 70%;
+    width: 78%;
     margin: 0 auto;
 }
 .events_contents3 {
     height: 180px;
-    width: 70%;
+    width: 78%;
     border-bottom: #000 solid 1px;
     border-top: #000 solid 1px;
     margin: 0 auto;
@@ -303,18 +304,20 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
+line-height: 1;
+margin-top: -20px;
 }
 .events-step {
     font-size: 20px;
     width: 100px;
 }
 .events-number {
-    font-size: 48px;
+    font-size: 36px;
     width: 100px;
 }
 .events_title {
     font-size: 36px;
-    width: 25vw;
+    width: 50vw;
 }
 .triangle-right{
     border-style: solid;
@@ -325,6 +328,9 @@ justify-content: center;
     height: 0;
     margin-left: 20vw;
 }
+.event_allow {
+    font-size: 36px;
+}
 /* ここまでevents */
 
 /* ここからfaq */
@@ -334,7 +340,7 @@ justify-content: center;
 }
 .faq {
     display: flex;
-    height: 190vh;
+    height: 1600px;
     /* margin-top: -30vh; */
 }
 .faq-left {
@@ -346,9 +352,9 @@ justify-content: center;
 .faq-left-sentence {
 background-color: #fbfbfb;
   width: 29vw;  
-  height: 29vw;
+  height: 18vw;
   border-right: #000 solid 1px; /* 右側に線を引く */
-  margin-top: 150px;
+  margin-top: 50px;
   padding-top: 50px;
   font-size: 20px;
   text-align: center;
@@ -369,7 +375,7 @@ background-color: #fbfbfb;
 }
 .faq2 {
     display: flex;
-    height: 200vh;
+    height: 2200px;
     margin-top: 0;
     /* margin-bottom: 300px; */
 }
@@ -402,9 +408,7 @@ background-color: #fbfbfb;
     align-items: center;
 }
 .faq-left-button2:hover {
-    transition: transform 0.1s ease;
-    transform: translate(10px, 0);
-    font-weight: 500;
+
 }
 .faq-left-button2-yajirushi {
     width: 52px;
@@ -431,17 +435,205 @@ background-color: #fbfbfb;
     /* padding-left: 220px; */
     margin: 0 auto;
     margin-bottom: 30px;
+    
 }
+/* .events-button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.5);
+  transition: opacity .25s;
+  z-index: 0; 
+} */
+/* .events-button::before {
+    content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.5);
+  transition: opacity .25s;
+  z-index: 0;
+} */
 .events-button1 {
-    background-image: url(../img/top-button.png);
+  background: url(../img/kikaku/kumasute.jpg) center / cover no-repeat;
+  background-color: #9B9B9B;
+   background-blend-mode: multiply;
     width: 753px;
     height: 165px;
     transition: transform 0.1s ease; /* 画像の拡大縮小をスムーズに */
     /* filter: sepia(100%); */
 }
-.events-button:hover {
+.events-button2 {
+    background: url(../img/kikaku/camsta.jpg) center / cover no-repeat;
+    width: 753px;
+    height: 165px;
+    transition: transform 0.1s ease; /* 画像の拡大縮小をスムーズに */
+    /* filter: sepia(100%); */
+    background-color: #9B9B9B;
+    background-blend-mode: multiply;
+}
+.events-button3 {
+    background: url(../img/kikaku/street.jpg) center / cover no-repeat;
+    width: 753px;
+    height: 165px;
+    transition: transform 0.1s ease; /* 画像の拡大縮小をスムーズに */
+    /* filter: sepia(100%); */
+    background-color: #9B9B9B;
+    background-blend-mode: multiply;
+}
+.events-button4 {
+  background: url(../img/kikaku/.jpg) center / cover no-repeat;
+    width: 753px;
+    height: 165px;
+    transition: transform 0.1s ease; /* 画像の拡大縮小をスムーズに */
+    /* filter: sepia(100%); */
+    background-color: #9B9B9B;
+    background-blend-mode: multiply;
+}
+.events-button5 {
+  background: url(../img/kikaku/koudou.jpg) center / cover no-repeat;
+    width: 753px;
+    height: 165px;
+    transition: transform 0.1s ease; /* 画像の拡大縮小をスムーズに */
+    /* filter: sepia(100%); */
+    background-color: #9B9B9B;
+    background-blend-mode: multiply;
+}
+.events-button6 {
+  background: url(../img/kikaku/kyoshitsu.jpg) center / cover no-repeat;
+    width: 753px;
+    height: 165px;
+    transition: transform 0.1s ease; /* 画像の拡大縮小をスムーズに */
+    /* filter: sepia(100%); */
+    background-color: #9B9B9B;
+    background-blend-mode: multiply;
+}
+.events-button7 {
+  background: url(../img/kikaku/art.jpg) center / cover no-repeat; 
+    width: 753px;
+    height: 165px;
+    transition: transform 0.1s ease; /* 画像の拡大縮小をスムーズに */
+    /* filter: sepia(100%); */
+    background-color: #9B9B9B;
+    background-blend-mode: multiply;
+}
+.events-button8 {
+  background: url(../img/kikaku/inshoku.jpg) center / cover no-repeat;
+    width: 753px;
+    height: 165px;
+    transition: transform 0.1s ease; /* 画像の拡大縮小をスムーズに */
+    /* filter: sepia(100%); */
+    background-color: #9B9B9B;
+    background-blend-mode: multiply;
+}
+.events-button9 {
+  background: url(../img/kikaku/openingfestival.jpg) center / cover no-repeat;
+    width: 753px;
+    height: 165px;
+    transition: transform 0.1s ease; /* 画像の拡大縮小をスムーズに */
+    /* filter: sepia(100%); */
+    background-position: 50% 70%;
+    background-color: #9B9B9B;
+    background-blend-mode: multiply;
+}
+.events-button10 {
+  background: url(../img/kikaku/endingfestival.jpg) center / cover no-repeat;
+    width: 753px;
+    height: 165px;
+    transition: transform 0.1s ease; /* 画像の拡大縮小をスムーズに */
+    /* filter: sepia(100%); */
+      background-position: 50% 70%;
+      background-color: #9B9B9B;
+    background-blend-mode: multiply;
+}
+.events-button11 {
+  background: url(../img/kikaku/countdownevent.jpg) center / cover no-repeat;
+    width: 753px;
+    height: 165px;
+    transition: transform 0.1s ease; /* 画像の拡大縮小をスムーズに */
+    /* filter: sepia(100%); */
+    background-color: #9B9B9B;
+    background-blend-mode: multiply;
+}
+.events-button12 {
+  background: url(../img/kikaku/countdownevent.jpg) center / cover no-repeat;
+    width: 753px;
+    height: 165px;
+    transition: transform 0.1s ease; /* 画像の拡大縮小をスムーズに */
+    /* filter: sepia(100%); */
+    background-position: 50% 75%;
+    background-color: #9B9B9B;
+    background-blend-mode: multiply;
+}
+.events-button13 {
+  background: url(../img/kikaku/zenya.jpg) center / cover no-repeat;
+    width: 753px;
+    height: 165px;
+    transition: transform 0.1s ease; /* 画像の拡大縮小をスムーズに */
+    /* filter: sepia(100%); */
+      background-position: 50% 60%;
+      background-color: #9B9B9B;
+    background-blend-mode: multiply;
+}
+.events-button14 {
+  background: url(../img/kikaku/parade.jpg) center / cover no-repeat;
+    width: 753px;
+    height: 165px;
+    transition: transform 0.1s ease; /* 画像の拡大縮小をスムーズに */
+    /* filter: sepia(100%); */
+      background-position: 50% 38%;
+      background-color: #9B9B9B;
+    background-blend-mode: multiply;
+}
+.events-button15 {
+  background: url(../img/kikaku/tyuukan.jpg) center / cover no-repeat; 
+    width: 753px;
+    height: 165px;
+    transition: transform 0.1s ease; /* 画像の拡大縮小をスムーズに */
+    /* filter: sepia(100%); */
+      background-position: 50% 45%;
+      background-color: #9B9B9B;
+    background-blend-mode: multiply;
+}
+.events-button16 {
+  background: url(../img/kikaku/kaihatsu.jpg) center / cover no-repeat; 
+  width: 753px;
+    height: 165px;
+    transition: transform 0.1s ease; /* 画像の拡大縮小をスムーズに */
+    /* filter: sepia(100%); */
+    background-color: #9B9B9B;
+    background-blend-mode: multiply;
+}
+.events-button17 {
+  background: url(../img/kikaku/sotsugyo.jpg) center / cover no-repeat;
+    background-position: 50% 60%;  
+  width: 753px;
+    height: 165px;
+    transition: transform 0.1s ease; /* 画像の拡大縮小をスムーズに */
+    /* filter: sepia(100%); */
+    background-color: #9B9B9B;
+    background-blend-mode: multiply;
+}
+.events-button18 {
+  background: url(../img/kikaku/workshop.jpg) center / cover no-repeat;
+    background-position: 50% 50%;
+    width: 753px;
+    height: 165px;
+    transition: transform 0.1s ease; /* 画像の拡大縮小をスムーズに */
+    /* filter: sepia(100%); */
+    background-color: #9B9B9B;
+    background-blend-mode: multiply;
+}
+
+.events-button:hover,
+.events-button.is-active {
     transform: scale(1.05); /* 画像を5%大きくする */
      /* filter: sepia(100%); */
+       /* ブレンドモードを通常に戻して解除 */
+  background-blend-mode: normal;
+  
+  /* 背景色を透明にして、元の画像だけが見えるようにする */
+  background-color: transparent;
+  transition: transform 0.4s ease-in-out;
 }
 .events-button-text:hover {
 }
@@ -486,16 +678,18 @@ background-color: #fbfbfb;
     /* margin-top: -5vh; */
 }
 .frequency-question {
-    width: 75vw;
+    width: 80vw;
     height: 180px;
     border-left: #000 solid 1px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     justify-content: center;
     font-size: 20px;
     margin-bottom: 80px;
+    padding-left: 50px;
+    line-height: 2.2;
 }
 
 .frequency-question-question {
@@ -507,7 +701,7 @@ background-color: #fbfbfb;
     width: 50px;
 }
 .frequency-question-right {
-    width: 65vw;
+    width: 80vw;
 }
 .frequency-question-answer {
     display: flex;
@@ -519,9 +713,9 @@ background-color: #fbfbfb;
     margin: 0 auto;
 }
 .frecuency-button-box:hover {
-    transform:scaleX(1.05);
+    /* transform:scaleX(1.05);
     transition: transform 0.1s ease;
-    font-weight: 500;
+    font-weight: 500; */
 }
 .frecuency-button {
     width: 250px;
@@ -534,10 +728,91 @@ background-color: #fbfbfb;
     position: absolute;
     left: 10px;
     top: 10px;
+    font-weight: 400;
 }
 .nagayajirushi {
     width: 250px;
     height: auto;
+}
+/* 1. 回転アニメーションを定義する */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* 2. 円(#Ellipse 12)にスタイルとアニメーションを適用する */
+#Ellipse12 {
+  fill: none;
+  stroke: #222222;
+  stroke-width: 1.5px;
+  
+  /* 円周の約3/4を表示する (円周 ≈ 408.4) */
+
+  
+  /* 回転の中心を円の中央に固定する（ズレ防止） */
+  transform-box: fill-box;
+  transform-origin: center;
+
+  /* 最初は非表示 */
+  opacity: 1;
+  transition: opacity 0.3s ease;
+
+  /* アニメーションの設定（ただし、最初は停止状態） */
+  animation-name: spin;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-play-state: paused; /* ホバーするまで停止しておく */
+}
+#Ellipse13 {
+  fill: none;
+  stroke: #222222;
+  stroke-width: 1px;
+  
+  /* 円周の約3/4を表示する (円周 ≈ 408.4) */
+    stroke-dasharray: 300 108.4;
+  stroke-linecap: round;
+  
+  /* 回転の中心を円の中央に固定する（ズレ防止） */
+  transform-box: fill-box;
+  transform-origin: center;
+
+  /* 最初は非表示 */
+  opacity: 1;
+  transition: opacity 0.3s ease;
+
+  /* アニメーションの設定（ただし、最初は停止状態） */
+  animation-name: spin;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+/* 3. 矢印(#Vector 4)のスタイル */
+#Vector4 {
+    stroke-width: 1.5;
+}
+
+/* 4. ボタンにホバーした時の動作 */
+.frecuency-button:hover #Ellipse12 {
+  transition: opacity 0.3s ease;
+  animation-play-state: running; /* アニメーションを再生する */
+  stroke-dasharray: 300 108.4;
+  stroke-linecap: round;
+}
+.faq-left-button2:hover #Ellipse13 {
+  transition: opacity 0.3s ease;
+  animation-play-state: running; /* アニメーションを再生する */
+  stroke-dasharray: 300 108.4;
+  stroke-linecap: round;
+}
+
+.frecuency-button:hover #Vector4 {
+    animation-duration: 1s;
 }
 /* ここまでよくある質問 */
 .sp {
@@ -623,13 +898,17 @@ margin-left: 5vw;
 /* ここまでnews */
 
 /* ここからurtasan */
+.utaver {
+    height: 1vh !important;
+}
 .utasan-sentence {
     width: 90vw;
 } 
 .utasan2 {
-    height: 400px;
+    height: 70vh;
     font-size: 14px;
-    justify-content: left;
+    justify-content: center;
+    margin-top: 10vh;
 }
 
 .uta-more {
@@ -637,7 +916,7 @@ margin-left: 5vw;
     max-height:0;     /* 折りたたみ */
   }
   .uta-more.is-open { /* ボタンを押したら開く */
-    max-height:2000px;
+    max-height:1400px ;
   }
 
   /* ボタンの見た目は自由に */
@@ -684,28 +963,50 @@ height: 600px;
     margin-top: 50px;
 
   } */
+.title-block-president {
+    margin-top: 60px;
+}
 /* ここまでutasan */
 
 /* ここから.step */
+.steps {
+
+}
 .steps_contents {
     font-size: 14px;
+    margin-top: -100px;
 }
 .steps_sentence {
     font-size: 14px;
+
 }
 .title-block-president {
     font-size: 16px;
+}
+.steps_circle {
+    width: 300px;
+    height: 300px;
+    margin-left: 80px;
+}
+.stepsver {
+    height: 30vh;
+}
+.titleblock-steps {
+    margin-top: 60px;
 }
 /* ここまでstep */
 
 /* ここからevent */
 .events {
-    height: auto;
+    height: 58vh;
 }
 .events_title {
     font-size: 20px;
     width: 200px;
     white-space: nowrap;
+}
+.title-block-events {
+    margin-top: 60px;
 }
 .event_box {
     padding-left: 20px;
@@ -727,14 +1028,19 @@ height: 600px;
 .events-step {
     font-size: 14px;
     width: 60px;
+    overflow-y: hidden;
 }
 .events-number {
-    font-size: 32px;
+    font-size: 20px;
     width: 60px;
+    overflow-y: hidden;
 }
 .triangle-right {
     margin-left: 20px;
     border-width: 6px 0 6px 11px;
+}
+.event_allow {
+    font-size: 20px;
 }
 /* ここまでevent */
 
@@ -776,20 +1082,42 @@ margin-top: 70px;
 }
 .faq2 {
 
-    height: 1000px;
+    height: 1200px;
 
     /* margin-bottom: 300px; */
 }
 .faq-right2 {
     width: 100vw;
-    height: 1000px;
+    height: 1200px;
     position: relative;
 }
 .blank {
     display: none;
 }
+.step_circle_back {
+  display: none;
+}
+.faqver {
+    height: 30vh;
+}
+.events-button:hover,
+.events-button.is-active {
+    transform: scale(1.1); /* 画像を5%大きくする */
+     /* filter: sepia(100%); */
+       /* ブレンドモードを通常に戻して解除 */
+  background-blend-mode: normal;
+  
+  /* 背景色を透明にして、元の画像だけが見えるようにする */
+  background-color: transparent;
+  transition: transform 0.2s ease-in-out;
+}
 /* ここまでfaq */
 /* ここからfrequency */
+.frequency-ver {
+    height: 25vh;
+}
+
+
 .frequency-question {
     font-size: 14px;
     width: 330px;
