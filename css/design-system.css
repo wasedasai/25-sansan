@@ -1,0 +1,27 @@
+.flow-index a{
+    text-decoration: none;
+    color: #222222;
+}
+.flow-decoration{
+    margin-left: -100px;
+}
+.jump-title{
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+.jump-title-number{
+    font-size: 135px;
+    font-weight: 500;
+}
+.jump-title-p-container{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.jump-title-p-container p{
+    font-size: 24px;
+}
+.jump-title-p-container h2{
+    font-size: 48px;
+}
