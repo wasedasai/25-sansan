@@ -344,7 +344,8 @@
   }
 
   /* 警告枠のパディング縮小 */
-  .warning-section{ padding: 40px 24px; font-size: 16px; margin-top: 70px;}
+  .warning-section{ margin: 0 7vw; padding: 40px 24px; font-size: 16px; margin-top: 70px; border: #222222 solid 1px;}
+
     .warning-section h3{ font-size: 24px; margin-bottom: 35px; }
   /* Credit セクション */
   .credit-title{ font-size: 24px; }
