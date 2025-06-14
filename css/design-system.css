@@ -137,6 +137,10 @@
 }
 .logo-container a{
     text-decoration: none;
+    transition: 0.4s;
+}
+.logo-container a:hover{
+    opacity: 0.6;
 }
 .warning-section{
     margin: 0 130px;
@@ -191,6 +195,11 @@
     font-weight: 500;
     font-size: 32px;
     margin-bottom: 20px;
+}
+.under-line{
+    text-decoration-line: underline !important;   /* 下線を引く */
+  text-decoration-thickness: 2px !important;    /* 太さ（任意）*/
+  text-underline-offset: 5px !important;
 }
 @media (max-width:1290px){
     .credit-section{
