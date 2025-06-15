@@ -311,19 +311,14 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
-line-height: 1;
-margin-top: -20px;
-overflow: hidden;
 }
 .events-step {
     font-size: 20px;
     width: 100px;
-    overflow: hidden;
 }
 .events-number {
-    font-size: 36px;
+    font-size: 48px;
     width: 100px;
-    overflow: hidden;
 }
 .events_title {
     font-size: 36px;
