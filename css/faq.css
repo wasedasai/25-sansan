@@ -1,5 +1,6 @@
 .pageLevel{
     margin:200px 0 100px 10%;
+    font-size: 24px;
 }
 
 a{
@@ -29,7 +30,7 @@ a{
     font-weight: normal;
 }
 
-.title1 h3{
+.subTitle{
     font-weight:normal;
     font-size: 16px;
 }
@@ -131,9 +132,10 @@ a{
     font-size: 13px;
     }
 
-    h3{
+    .subTitle{
         font-size: 13px;
     }
+    
 
     .circle{
     position: absolute;
