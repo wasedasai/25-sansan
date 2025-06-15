@@ -169,9 +169,19 @@
 .isolation-img img{
     width: 20vw;
     height: 20vw;
-    background-color: #d9d9d9;
     margin-top: 10px;
     margin-bottom: 60px;
+}
+.isolation-text{
+    width: 21vw;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0vw;
+}
+.isolation-text p{
+    margin-top: 18px;
+    line-height: 30px;
 }
 .credit-section{
     display: flex;
