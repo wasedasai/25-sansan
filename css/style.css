@@ -368,6 +368,7 @@ background-color: #fbfbfb;
   top: 10px;
   position: fixed;
     z-index: -10;
+  padding-left: 80px;
 }
 
 .faq-right {
